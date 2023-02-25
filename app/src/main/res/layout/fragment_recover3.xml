@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".Recover3Fragment">
+
+        <ImageView
+            android:id="@+id/imageYellowokicon"
+            android:layout_width="@dimen/_261pxh"
+            android:layout_height="@dimen/_200pxh"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="76dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/img_yellowokicon" />
+
+        <TextView
+            android:id="@+id/txtDescription"
+            style="@style/txtIntermedium20"
+            android:layout_width="389dp"
+            android:layout_height="104dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="60dp"
+            android:gravity="start"
+            android:text="@string/msg_listo_tu_contr"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageYellowokicon"
+            app:layout_constraintVertical_bias="0.103"
+            tools:text="@string/msg_listo_tu_contr" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

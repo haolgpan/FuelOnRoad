@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_background"
+        tools:context=".ContentMainFragment">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="141dp"
+            android:layout_height="154dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="52dp"
+            android:layout_marginBottom="60dp"
+            android:src="@drawable/img_logo21"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/buttonLogin"
+            style="@style/btnSolidRounded"
+            android:layout_width="295dp"
+            android:layout_height="65dp"
+            android:layout_marginVertical="40dp"
+            android:layout_marginTop="150dp"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:text="@string/lbl_login"
+            app:layout_constraintBottom_toTopOf="@+id/buttonRegistro"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:layout_constraintVertical_bias="1.0"
+            tools:text="@string/lbl_login" />
+
+        <TextView
+            android:id="@+id/buttonRegistro"
+            style="@style/btnSolidRounded"
+            android:layout_width="295dp"
+            android:layout_height="65dp"
+            android:layout_marginBottom="128dp"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:text="@string/lbl_registro"
+            app:layout_constraintBottom_toTopOf="@+id/txtRecordarcontra"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:layout_constraintVertical_bias="0.888"
+            tools:text="@string/lbl_registro" />
+
+        <TextView
+            android:id="@+id/txtRecordarcontra"
+            style="@style/txtIntermedium20"
+            android:layout_width="346dp"
+            android:layout_height="39dp"
+            android:layout_marginVertical="40dp"
+            android:layout_marginBottom="124dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/msg_recordar_contra"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="@string/msg_recordar_contra" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

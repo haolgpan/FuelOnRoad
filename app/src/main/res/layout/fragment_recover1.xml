@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".Recover1Fragment">
+
+
+        <ImageView
+            android:id="@+id/imageSmartphonew"
+            android:layout_width="@dimen/_175pxh"
+            android:layout_height="@dimen/_179pxh"
+            android:layout_gravity="start"
+            android:layout_marginTop="44dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/img_3dsmartphonew" />
+
+        <TextView
+            android:id="@+id/txtLanguage"
+            style="@style/txtIntermedium20"
+            android:layout_width="365dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="27dp"
+            android:gravity="center_horizontal"
+            android:text="@string/msg_introduce_el_te"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageSmartphonew"
+            tools:text="@string/msg_introduce_el_te" />
+
+        <View
+            android:id="@+id/viewRectangleTwentyFive2"
+            android:layout_width="330dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rectangle_bg_bluegray_100_radius_20"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtLanguage" />
+
+        <TextView
+            android:id="@+id/buttonAceptar"
+            style="@style/btnSolidRounded"
+            android:layout_width="295dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="@string/lbl_aceptar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewRectangleTwentyFive2"
+            tools:text="@string/lbl_aceptar" />
+
+        <TextView
+            android:id="@+id/buttonCancelar"
+            style="@style/btnSolidRounded"
+            android:layout_width="295dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="40dp"
+            android:gravity="center"
+            android:text="@string/lbl_cancelar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonAceptar"
+            tools:text="@string/lbl_cancelar" />
+
+        <ImageView
+            android:id="@+id/imagePolygonOne"
+            android:layout_width="@dimen/_42pxh"
+            android:layout_height="@dimen/_48pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_polygon1"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/viewEllipseOne"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonCancelar"
+            tools:src="@drawable/img_polygon1" />
+
+        <View
+            android:id="@+id/viewEllipseOne"
+            android:layout_width="@dimen/_34pxh"
+            android:layout_height="@dimen/_34pxh"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/rectangle_bg_gray_400_radius_17"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/viewEllipseTwo"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imagePolygonOne"
+            app:layout_constraintTop_toBottomOf="@+id/buttonCancelar" />
+
+        <View
+            android:id="@+id/viewEllipseTwo"
+            android:layout_width="@dimen/_34pxh"
+            android:layout_height="@dimen/_34pxh"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/rectangle_bg_bluegray_100_radius_17"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imagePolygonTwo"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/viewEllipseOne"
+            app:layout_constraintTop_toBottomOf="@+id/buttonCancelar" />
+
+        <ImageView
+            android:id="@+id/imagePolygonTwo"
+            android:layout_width="@dimen/_41pxh"
+            android:layout_height="@dimen/_48pxh"
+            android:scaleType="fitXY"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:src="@drawable/img_polygon2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/viewEllipseTwo"
+            app:layout_constraintTop_toBottomOf="@+id/buttonCancelar" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

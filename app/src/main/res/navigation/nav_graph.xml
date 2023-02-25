@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/contentMainFragment">
+
+    <fragment
+        android:id="@+id/loggingInFragment"
+        android:name="com.example.fuelonroad.LoggingInFragment"
+        android:label="fragment_logging_in"
+        tools:layout="@layout/fragment_logging_in" />
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.example.fuelonroad.SignUpFragment"
+        android:label="fragment_sign_in"
+        tools:layout="@layout/fragment_sign_up" />
+    <fragment
+        android:id="@+id/recover1Fragment"
+        android:name="com.example.fuelonroad.Recover1Fragment"
+        android:label="fragment_recover1"
+        tools:layout="@layout/fragment_recover1" />
+    <fragment
+        android:id="@+id/recover2Fragment"
+        android:name="com.example.fuelonroad.Recover2Fragment"
+        android:label="fragment_recover2"
+        tools:layout="@layout/fragment_recover2" />
+    <fragment
+        android:id="@+id/actualizarPerfilFragment"
+        android:name="com.example.fuelonroad.ActualizarPerfilFragment"
+        android:label="fragment_actualizar_perfil"
+        tools:layout="@layout/fragment_actualizar_perfil" />
+    <fragment
+        android:id="@+id/recover3Fragment"
+        android:name="com.example.fuelonroad.Recover3Fragment"
+        android:label="fragment_recover3"
+        tools:layout="@layout/fragment_recover3" />
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.example.fuelonroad.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" />
+    <fragment
+        android:id="@+id/addVehiculoFragment"
+        android:name="com.example.fuelonroad.AddVehiculoFragment"
+        android:label="fragment_add_vehiculo"
+        tools:layout="@layout/fragment_add_vehiculo" />
+    <fragment
+        android:id="@+id/modificarVehiculoFragment"
+        android:name="com.example.fuelonroad.ModificarVehiculoFragment"
+        android:label="fragment_modificar_vehiculo"
+        tools:layout="@layout/fragment_modificar_vehiculo" />
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.example.fuelonroad.ChatFragment"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat" />
+    <fragment
+        android:id="@+id/incidenciasFragment"
+        android:name="com.example.fuelonroad.IncidenciasFragment"
+        android:label="fragment_incidencias"
+        tools:layout="@layout/fragment_incidencias" />
+    <fragment
+        android:id="@+id/vehiculosFragment"
+        android:name="com.example.fuelonroad.VehiculosFragment"
+        android:label="fragment_vehiculos"
+        tools:layout="@layout/fragment_vehiculos" />
+    <fragment
+        android:id="@+id/contentMainFragment"
+        android:name="com.example.fuelonroad.ContentMainFragment"
+        android:label="fragment_content_main"
+        tools:layout="@layout/fragment_content_main" />
+    <fragment
+        android:id="@+id/vehiculosModFragment"
+        android:name="com.example.fuelonroad.VehiculosModFragment"
+        android:label="fragment_vehiculos_mod"
+        tools:layout="@layout/fragment_vehiculos_mod" />
+</navigation>

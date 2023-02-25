@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".Recover2Fragment">
+
+
+        <TextView
+            android:id="@+id/introduce_cod"
+            style="@style/txtIntermedium20"
+            android:layout_width="355dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="40dp"
+            android:gravity="start"
+            android:text="@string/msg_introduce_el_c"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/msg_introduce_el_c" />
+
+        <android.inputmethodservice.ExtractEditText
+            android:id="@+id/cod_verif"
+            android:layout_width="330dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rectangle_bg_bluegray_100_radius_20"
+            app:layout_constraintStart_toStartOf="@+id/repeat_contra"
+            app:layout_constraintTop_toBottomOf="@+id/repeat_contra" />
+
+        <TextView
+            android:id="@+id/contra"
+            style="@style/txtIntermedium20"
+            android:layout_width="355dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:gravity="start"
+            android:text="@string/msg_introduce_la_co"
+            app:layout_constraintStart_toStartOf="@+id/introduce_field"
+            app:layout_constraintTop_toBottomOf="@+id/introduce_field"
+            tools:text="@string/msg_introduce_la_co" />
+
+        <View
+            android:id="@+id/contra_recover"
+            android:layout_width="330dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rectangle_bg_bluegray_100_radius_20"
+            app:layout_constraintStart_toStartOf="@+id/contra"
+            app:layout_constraintTop_toBottomOf="@+id/contra" />
+
+        <TextView
+            android:id="@+id/repeat_contra"
+            style="@style/txtIntermedium20"
+            android:layout_width="355dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:gravity="start"
+            android:text="@string/msg_introduce_el_c"
+            app:layout_constraintStart_toStartOf="@+id/contra_recover"
+            app:layout_constraintTop_toBottomOf="@+id/contra_recover"
+            tools:text="@string/msg_repite_la_nueva" />
+
+        <android.inputmethodservice.ExtractEditText
+            android:id="@+id/introduce_field"
+            android:layout_width="330dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rectangle_bg_bluegray_100_radius_20"
+            app:layout_constraintStart_toStartOf="@+id/introduce_cod"
+            app:layout_constraintTop_toBottomOf="@+id/introduce_cod" />
+
+        <TextView
+            android:id="@+id/buttonAceptar"
+            style="@style/btnSolidRounded"
+            android:layout_width="295dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="170dp"
+            android:layout_marginBottom="170dp"
+            android:gravity="center"
+            android:text="@string/lbl_aceptar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cod_verif"
+            tools:text="@string/lbl_aceptar" />
+
+        <ImageView
+            android:id="@+id/imagePolygonTwo"
+            android:layout_width="@dimen/_41pxh"
+            android:layout_height="@dimen/_48pxh"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="100dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_polygon2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/viewEllipseOne"
+            app:layout_constraintTop_toBottomOf="@+id/buttonAceptar"
+            tools:src="@drawable/img_polygon2" />
+
+        <ImageView
+            android:id="@+id/imagePolygonOne"
+            android:layout_width="@dimen/_42pxh"
+            android:layout_height="@dimen/_48pxh"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="100dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_polygon1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/viewEllipseTwo"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonAceptar"
+            tools:src="@drawable/img_polygon1" />
+
+        <View
+            android:id="@+id/viewEllipseOne"
+            android:layout_width="@dimen/_34pxh"
+            android:layout_height="@dimen/_34pxh"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="100dp"
+            android:background="@drawable/rectangle_bg_gray_400_radius_17"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imagePolygonTwo"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/viewEllipseTwo"
+            app:layout_constraintTop_toBottomOf="@+id/buttonAceptar" />
+
+        <View
+            android:id="@+id/viewEllipseTwo"
+            android:layout_width="@dimen/_34pxh"
+            android:layout_height="@dimen/_34pxh"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="100dp"
+            android:background="@drawable/rectangle_bg_bluegray_100_radius_17"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/viewEllipseOne"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imagePolygonOne"
+            app:layout_constraintTop_toBottomOf="@+id/buttonAceptar" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

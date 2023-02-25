@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".ActualizarPerfilFragment">
+
+
+        <ImageView
+            android:id="@+id/imageGroupFortyNine"
+            android:layout_width="@dimen/_118pxh"
+            android:layout_height="@dimen/_116pxh"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="45dp"
+            android:layout_marginBottom="45dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_group49"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/txtNombre"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/img_group49" />
+
+        <EditText
+            android:id="@+id/etWeburl"
+            style="@style/etSolidRounded"
+            android:layout_width="390dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rectangle_bg_bluegray_100_radius_10"
+            android:ellipsize="end"
+            android:hint="@string/lbl_hao_pan"
+            android:inputType="text"
+            android:paddingStart="@dimen/_14pxh"
+            android:paddingTop="@dimen/_10pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingBottom="@dimen/_6pxv"
+            android:singleLine="true"
+            android:textColorHint="@color/black_900"
+            app:layout_constraintBottom_toTopOf="@+id/txtNombre"
+            app:layout_constraintStart_toEndOf="@+id/etGroupThirtyFive"
+            app:layout_constraintStart_toStartOf="@+id/txtNombre"
+            app:layout_constraintTop_toBottomOf="@+id/txtNombredeusuar"
+            tools:ignore="Autofill" />
+
+        <TextView
+            android:id="@+id/txtNombredeusuar"
+            style="@style/txtInterbold14"
+            android:layout_width="253dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/msg_nombre_de_usuar"
+            app:layout_constraintBottom_toTopOf="@+id/etWeburl"
+            app:layout_constraintStart_toEndOf="@+id/etGroupThirtyTwo"
+            app:layout_constraintStart_toStartOf="@+id/etWeburl"
+            app:layout_constraintTop_toBottomOf="@+id/imageGroupFortyNine"
+            tools:text="@string/msg_nombre_de_usuar" />
+
+        <TextView
+            android:id="@+id/txtTelfono"
+            style="@style/txtInterbold14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/lbl_tel_fono"
+            app:layout_constraintBottom_toTopOf="@+id/etGroupThirtyFive"
+            app:layout_constraintStart_toEndOf="@+id/txtApellidos"
+            app:layout_constraintStart_toStartOf="@+id/etGroupThirtyFive"
+            app:layout_constraintTop_toBottomOf="@+id/etEmailOne"
+            tools:text="@string/lbl_tel_fono" />
+
+        <EditText
+            android:id="@+id/etGroupThirtyFive"
+            style="@style/etSolidRounded"
+            android:layout_width="390dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rectangle_bg_bluegray_100_radius_10"
+            android:ellipsize="end"
+            android:hint="@string/lbl_688987546"
+            android:inputType="phone"
+            android:paddingStart="@dimen/_14pxh"
+            android:paddingTop="@dimen/_10pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingBottom="@dimen/_6pxv"
+            android:singleLine="true"
+            android:textColorHint="@color/black_900"
+            app:layout_constraintBottom_toTopOf="@+id/txtContrasea"
+            app:layout_constraintStart_toStartOf="@+id/txtContrasea"
+            app:layout_constraintTop_toBottomOf="@+id/txtTelfono"
+            tools:ignore="Autofill" />
+
+        <TextView
+            android:id="@+id/txtContrasea"
+            style="@style/txtInterbold14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/lbl_contrase_a"
+            app:layout_constraintBottom_toTopOf="@+id/frameStacklightbulb"
+            app:layout_constraintStart_toEndOf="@+id/imageGroupFortyNine"
+            app:layout_constraintStart_toStartOf="@+id/frameStacklightbulb"
+            app:layout_constraintTop_toBottomOf="@+id/etGroupThirtyFive"
+            tools:text="@string/lbl_contrase_a" />
+
+        <FrameLayout
+            android:id="@+id/frameStacklightbulb"
+            style="@style/groupStylebluegray_100cornerRadius"
+            android:layout_width="390dp"
+            android:layout_height="45dp"
+            android:layout_gravity="top|start"
+            android:layout_marginTop="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/txtActualizarperf"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/etGroupThirtyThree"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtContrasea">
+
+            <ImageView
+                android:id="@+id/imageLightbulb"
+                android:layout_width="@dimen/_28pxh"
+                android:layout_height="@dimen/_22pxh"
+                android:layout_gravity="end"
+                android:layout_marginStart="@dimen/_12pxh"
+                android:layout_marginTop="@dimen/_4pxv"
+                android:layout_marginEnd="@dimen/_12pxh"
+                android:layout_marginBottom="@dimen/_3pxv"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_lightbulb"
+                tools:ignore="ContentDescription"
+                tools:src="@drawable/img_lightbulb" />
+
+            <TextView
+                android:id="@+id/txtOne"
+                style="@style/txtInterblack32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/lbl"
+                tools:text="@string/lbl" />
+
+        </FrameLayout>
+
+        <EditText
+            android:id="@+id/etEmailOne"
+            style="@style/etSolidRounded"
+            android:layout_width="390dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rectangle_bg_bluegray_100_radius_10"
+            android:ellipsize="end"
+            android:hint="@string/msg_haolgpan_gmail"
+            android:inputType="textEmailAddress"
+            android:paddingStart="@dimen/_14pxh"
+            android:paddingTop="@dimen/_10pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingBottom="@dimen/_6pxv"
+            android:singleLine="true"
+            android:textColorHint="@color/black_900"
+            app:layout_constraintBottom_toTopOf="@+id/txtTelfono"
+            app:layout_constraintStart_toEndOf="@+id/frameStacklightbulb"
+            app:layout_constraintStart_toStartOf="@+id/txtTelfono"
+            app:layout_constraintTop_toBottomOf="@+id/txtEmail"
+            tools:ignore="Autofill" />
+
+        <TextView
+            android:id="@+id/txtApellidos"
+            style="@style/txtInterbold14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/lbl_apellidos"
+            app:layout_constraintBottom_toTopOf="@+id/etGroupThirtyThree"
+            app:layout_constraintStart_toEndOf="@+id/txtContrasea"
+            app:layout_constraintStart_toStartOf="@+id/etGroupThirtyThree"
+            app:layout_constraintTop_toBottomOf="@+id/etGroupThirtyTwo"
+            tools:text="@string/lbl_apellidos" />
+
+        <EditText
+            android:id="@+id/etGroupThirtyTwo"
+            style="@style/etSolidRounded"
+            android:layout_width="390dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rectangle_bg_bluegray_100_radius_10"
+            android:ellipsize="end"
+            android:hint="@string/lbl_hao"
+            android:inputType="text"
+            android:paddingStart="@dimen/_14pxh"
+            android:paddingTop="@dimen/_10pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingBottom="@dimen/_6pxv"
+            android:singleLine="true"
+            android:textColorHint="@color/black_900"
+            app:layout_constraintBottom_toTopOf="@+id/txtApellidos"
+            app:layout_constraintStart_toEndOf="@+id/etEmailOne"
+            app:layout_constraintStart_toStartOf="@+id/txtApellidos"
+            app:layout_constraintTop_toBottomOf="@+id/txtNombre"
+            tools:ignore="Autofill" />
+
+        <TextView
+            android:id="@+id/txtEmail"
+            style="@style/txtInterbold14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/lbl_e_mail"
+            app:layout_constraintBottom_toTopOf="@+id/etEmailOne"
+            app:layout_constraintStart_toEndOf="@+id/txtTelfono"
+            app:layout_constraintStart_toStartOf="@+id/etEmailOne"
+            app:layout_constraintTop_toBottomOf="@+id/etGroupThirtyThree"
+            tools:text="@string/lbl_e_mail" />
+
+        <EditText
+            android:id="@+id/etGroupThirtyThree"
+            style="@style/etSolidRounded"
+            android:layout_width="390dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rectangle_bg_bluegray_100_radius_10"
+            android:ellipsize="end"
+            android:hint="@string/lbl_pan"
+            android:inputType="text"
+            android:paddingStart="@dimen/_14pxh"
+            android:paddingTop="@dimen/_10pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingBottom="@dimen/_6pxv"
+            android:singleLine="true"
+            android:textColorHint="@color/black_900"
+            app:layout_constraintBottom_toTopOf="@+id/txtEmail"
+            app:layout_constraintStart_toEndOf="@+id/etWeburl"
+            app:layout_constraintStart_toStartOf="@+id/txtEmail"
+            app:layout_constraintTop_toBottomOf="@+id/txtApellidos"
+            tools:ignore="Autofill" />
+
+        <TextView
+            android:id="@+id/txtNombre"
+            style="@style/txtInterbold14"
+            android:layout_width="247dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/lbl_nombre"
+            app:layout_constraintBottom_toTopOf="@+id/etGroupThirtyTwo"
+            app:layout_constraintStart_toEndOf="@+id/txtNombredeusuar"
+            app:layout_constraintStart_toStartOf="@+id/etGroupThirtyTwo"
+            app:layout_constraintTop_toBottomOf="@+id/etWeburl"
+            tools:text="@string/lbl_nombre" />
+
+        <TextView
+            android:id="@+id/txtActualizarperf"
+            style="@style/btnSolidRounded"
+            android:layout_width="310dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="40dp"
+            android:gravity="center_horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginBottom="30dp"
+            android:text="@string/msg_actualizar_perf"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frameStacklightbulb"
+            tools:text="@string/msg_actualizar_perf" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

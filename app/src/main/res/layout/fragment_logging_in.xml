@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".LoggingInFragment">
+
+        <!-- TODO: Update blank fragment layout -->
+
+        <ImageView
+            android:id="@+id/imageLogoTwentyOne"
+            android:layout_width="154dp"
+            android:layout_height="147dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginVertical="30dp"
+            android:layout_marginTop="44dp"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toTopOf="@+id/txtIntroduceeln"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/img_logo21" />
+
+        <TextView
+            android:id="@+id/txtIntroduceeln"
+            style="@style/txtIntermedium20"
+            android:layout_width="355dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="35dp"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:singleLine="true"
+            android:text="@string/msg_introduce_el_n"
+            app:layout_constraintBottom_toTopOf="@+id/fieldContrasenya"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="@string/msg_introduce_el_n" />
+
+        <android.inputmethodservice.ExtractEditText
+            android:id="@+id/fieldContrasenya"
+            android:layout_width="355dp"
+            android:layout_height="57dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="35dp"
+            android:background="@drawable/rectangle_bg_bluegray_100_radius_20"
+            app:layout_constraintBottom_toTopOf="@+id/fieldDni"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/fieldDni"
+            style="@style/txtIntermedium20"
+            android:layout_width="355dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="35dp"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:singleLine="true"
+            android:text="@string/msg_introduce_la_co"
+            app:layout_constraintBottom_toTopOf="@+id/viewRectangleTwentyFour"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="@string/msg_introduce_la_co" />
+
+        <android.inputmethodservice.ExtractEditText
+            android:id="@+id/viewRectangleTwentyFour"
+            android:layout_width="355dp"
+            android:layout_height="57dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="95dp"
+            android:background="@drawable/rectangle_bg_bluegray_100_radius_20"
+            app:layout_constraintBottom_toTopOf="@+id/buttonLogin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/buttonLogin"
+            style="@style/btnSolidRounded"
+            android:layout_width="295dp"
+            android:layout_height="65dp"
+            android:layout_marginVertical="40dp"
+            android:layout_marginBottom="64dp"
+            android:gravity="center"
+            android:text="@string/lbl_login"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="@string/lbl_login" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

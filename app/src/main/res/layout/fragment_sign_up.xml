@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".SignUpFragment">
+
+        <TextView
+            android:id="@+id/txtGroupFortySeven"
+            style="@style/txtSolidRoundedBottomCorner"
+            android:layout_width="match_parent"
+            android:layout_height="73dp"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:paddingStart="15dp"
+            android:paddingTop="25dp"
+            android:paddingBottom="5dp"
+            android:singleLine="true"
+            android:text="@string/lbl_registro"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.417"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/lbl_registro" />
+
+        <TextView
+            android:id="@+id/txtComoquieresq"
+            style="@style/txtIntermedium20"
+            android:layout_width="355dp"
+            android:layout_height="30dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="48dp"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:singleLine="true"
+            android:text="@string/msg_como_quieres_q"
+            app:layout_constraintBottom_toTopOf="@+id/viewRectangleTwentyFive"
+            app:layout_constraintStart_toStartOf="@+id/viewRectangleTwentyFive"
+            app:layout_constraintTop_toBottomOf="@+id/txtGroupFortySeven"
+            tools:text="@string/msg_como_quieres_q" />
+
+        <android.inputmethodservice.ExtractEditText
+            android:id="@+id/viewRectangleTwentyFive"
+            android:layout_width="330dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rectangle_bg_bluegray_100_radius_20"
+            app:layout_constraintBottom_toTopOf="@+id/txtPorseguridad"
+            app:layout_constraintStart_toStartOf="@+id/txtPorseguridad"
+            app:layout_constraintTop_toBottomOf="@+id/txtComoquieresq" />
+
+        <TextView
+            android:id="@+id/txtPorseguridad"
+            style="@style/txtIntermedium20"
+            android:layout_width="355dp"
+            android:layout_height="30dp"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:singleLine="true"
+            android:text="@string/msg_por_seguridad"
+            app:layout_constraintBottom_toTopOf="@+id/viewRectangleTwentyFour"
+            app:layout_constraintStart_toStartOf="@+id/viewRectangleTwentyFour"
+            app:layout_constraintTop_toBottomOf="@+id/viewRectangleTwentyFive"
+            tools:text="@string/msg_por_seguridad" />
+
+        <android.inputmethodservice.ExtractEditText
+            android:id="@+id/viewRectangleTwentyFour"
+            android:layout_width="330dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rectangle_bg_bluegray_100_radius_20"
+            app:layout_constraintBottom_toTopOf="@+id/txtIntroduceunac"
+            app:layout_constraintStart_toStartOf="@+id/txtIntroduceunac"
+            app:layout_constraintTop_toBottomOf="@+id/txtPorseguridad" />
+
+        <TextView
+            android:id="@+id/txtIntroduceunac"
+            style="@style/txtIntermedium20"
+            android:layout_width="355dp"
+            android:layout_height="30dp"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:singleLine="true"
+            android:text="@string/msg_introduce_una_c"
+            app:layout_constraintBottom_toTopOf="@+id/viewRectangleTwentyNine"
+            app:layout_constraintStart_toStartOf="@+id/viewRectangleTwentyNine"
+            app:layout_constraintTop_toBottomOf="@+id/viewRectangleTwentyFour"
+            tools:text="@string/msg_introduce_una_c" />
+
+        <android.inputmethodservice.ExtractEditText
+            android:id="@+id/viewRectangleTwentyNine"
+            android:layout_width="330dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rectangle_bg_bluegray_100_radius_20"
+            app:layout_constraintBottom_toTopOf="@+id/txtRepitelanueva"
+            app:layout_constraintStart_toStartOf="@+id/txtRepitelanueva"
+            app:layout_constraintTop_toBottomOf="@+id/txtIntroduceunac" />
+
+        <TextView
+            android:id="@+id/txtRepitelanueva"
+            style="@style/txtIntermedium20"
+            android:layout_width="355dp"
+            android:layout_height="30dp"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:singleLine="true"
+            android:text="@string/msg_repite_la_nueva"
+            app:layout_constraintBottom_toTopOf="@+id/viewRectangleTwentyEight"
+            app:layout_constraintStart_toStartOf="@+id/viewRectangleTwentyEight"
+            app:layout_constraintTop_toBottomOf="@+id/viewRectangleTwentyNine"
+            tools:text="@string/msg_repite_la_nueva" />
+
+        <android.inputmethodservice.ExtractEditText
+            android:id="@+id/viewRectangleTwentyEight"
+            android:layout_width="330dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rectangle_bg_bluegray_100_radius_20"
+            app:layout_constraintBottom_toTopOf="@+id/buttonAceptar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtRepitelanueva" />
+
+        <TextView
+            android:id="@+id/buttonAceptar"
+            style="@style/btnSolidRounded"
+            android:layout_width="295dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="76dp"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:text="@string/lbl_aceptar"
+            app:layout_constraintBottom_toTopOf="@+id/buttonCancelar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewRectangleTwentyEight"
+            tools:text="@string/lbl_aceptar" />
+
+        <TextView
+            android:id="@+id/buttonCancelar"
+            style="@style/btnSolidRounded"
+            android:layout_width="295dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="40dp"
+            android:gravity="center"
+            android:text="@string/lbl_cancelar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonAceptar"
+            tools:text="@string/lbl_cancelar" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

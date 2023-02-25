@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    <string name="app_name">hao_long_s_application1</string>
+    <string name="loading">Loading…</string>
+    <string name="no_internet_connection">No internet connection!</string>
+    <string name="msg_introduce_la_co">Introduce la contraseña</string>
+    <string name="lbl_tue">Tue</string>
+    <string name="msg_introduce_el_c">Introduce el código de verificación.</string>
+    <string name="msg_haolgpan_gmail">haolgpan@gmail.com</string>
+    <string name="lbl2">+</string>
+    <string name="lbl3">\?</string>
+    <string name="lbl_cancelar">Cancelar</string>
+    <string name="lbl_18_mar">18 Mar</string>
+    <string name="msg_maciej_kowalski">maciej.kowalski@email.com</string>
+    <string name="lbl_next_month">Next month?</string>
+    <string name="msg_introduce_el_te">Introduce el teléfono de la cuenta para enviarte un código de validación. </string>
+    <string name="msg_introduce_el_n">Introduce el núm D.N.I</string>
+    <string name="lbl_e_mail">E-mail</string>
+    <string name="msg_recordar_contra">Recordar contraseña</string>
+    <string name="msg_repartidores_li">Repartidores libres: 3</string>
+    <string name="msg_un_repartidor_s">Un repartidor se está acercando a tu ubicación con un tiempo de espera máximo 5 minutos.</string>
+    <string name="lbl_tel_fono">Teléfono</string>
+    <string name="lbl_registro">Registro</string>
+    <string name="lbl_uploaded_file">Uploaded file.</string>
+    <string name="msg_listo_tu_contr">Listo!
+
+Tu contraseña ya ha sido reestablecida, pruebar hacer login otra vez.</string>
+    <string name="lbl_a_adir_veh_culo">Añadir vehículo</string>
+    <string name="lbl_incidencias">Incidencias</string>
+    <string name="msg_por_seguridad">Por seguridad, introduce tu D.N.I</string>
+    <string name="lbl_hao_pan">Hao.Pan</string>
+    <string name="lbl_apellidos">Apellidos</string>
+    <string name="msg_matr_cula_8346">Matrícula: 8346GGF
+Tipo de repostaje: Gasolina</string>
+    <string name="msg_matr_cula_8743">Matrícula: 8743ASD
+Tipo de repostaje: Diesel</string>
+    <string name="msg_matr_cula_9876">Matrícula: 9876MJH
+Tipo de repostaje: Híbrido</string>
+    <string name="lbl">········</string>
+    <string name="lbl_sun">Sun</string>
+    <string name="msg_matr_cula_126y">Matrícula: 126YUR
+Tipo de repostaje: Diesel</string>
+    <string name="lbl_maciej_or_owski">Maciej Orłowski</string>
+    <string name="msg_mis_conversacio">Mis conversaciones</string>
+    <string name="lbl_08_43">08:43</string>
+    <string name="lbl_search">Search...</string>
+    <string name="lbl_chatrooms">Chatrooms</string>
+    <string name="msg_repite_la_nueva">Repite la nueva contraseña.</string>
+    <string name="msg_nombre_de_usuar">Nombre de usuario</string>
+    <string name="msg_i_commented_on">I commented on Figma, I want to add some fancy icons. Do you have any icon set?</string>
+    <string name="lbl_krysia_eurydyka">Krysia Eurydyka</string>
+    <string name="lbl_nombre">Nombre</string>
+    <string name="lbl_login">Login</string>
+    <string name="msg_matr_cula_9887">Matrícula: 9887TYT
+Tipo de repostaje: Híbrido</string>
+    <string name="msg_will_do_super">Will do, super, thank you</string>
+    <string name="msg_como_quieres_q">¿Como quieres que te llamemos?</string>
+    <string name="lbl_aceptar">Aceptar</string>
+    <string name="msg_introduce_la_ma">Introduce la matrícula del vehículo</string>
+    <string name="msg_repartidores_li2">Repartidores libres: 4</string>
+    <string name="lbl_1_feb_12_00">1 FEB 12:00</string>
+    <string name="msg_que_tipo_de_re">¿Que tipo de repostaje es?</string>
+    <string name="lbl_bo_enka_malina">Bożenka Malina</string>
+    <string name="lbl_08_12">08:12</string>
+    <string name="lbl_23_mar">23 Mar</string>
+    <string name="msg_est_s_en_modo_e">Estás en modo emergencia, se pedirá verificación dactilar.</string>
+    <string name="msg_actualizar_perf">Actualizar perfil</string>
+    <string name="msg_i_am_in_a_proce">I am in a process of designing some. When do you need them?</string>
+    <string name="msg_odeusz_piotrows">Odeusz Piotrowski</string>
+    <string name="lbl_688987546">688987546</string>
+    <string name="msg_introduce_la_nu">Introduce la nueva contraseña.</string>
+    <string name="msg_i_am_almost_fin">I am almost finish. Please give me your email, I will ZIP them and send you as son as im finish.</string>
+    <string name="lbl_mis_incidencias">Mis incidencias</string>
+    <string name="lbl_pan">Pan</string>
+    <string name="lbl_buscar_veh_culo">Buscar vehículo</string>
+    <string name="msg_introduce_una_c">Introduce una contraseña.</string>
+    <string name="msg_here_is_another">Here is another tutorial, if you...</string>
+    <string name="lbl_mis_veh_culos">Mis vehículos</string>
+    <string name="msg_matr_cula_9898">Matrícula: 9898QWE
+Tipo de repostaje: Gasolina</string>
+    <string name="msg_est_s_en_modo_r">Estás en modo repostaje, espera un segundo</string>
+    <string name="lbl_hao">Hao</string>
+    <string name="lbl_contrase_a">Contraseña</string>
+    <string name="lbl_maciej_kowalski">Maciej Kowalski</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
