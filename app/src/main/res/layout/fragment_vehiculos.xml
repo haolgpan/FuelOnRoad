@@ -223,7 +223,7 @@
                         <FrameLayout
                             android:id="@+id/frameStackmatrcula9887"
                             android:layout_width="match_parent"
-                            android:layout_height="107dp"
+                            android:layout_height="92dp"
                             android:layout_marginTop="@dimen/_4pxv">
 
                             <androidx.constraintlayout.widget.ConstraintLayout
@@ -263,7 +263,7 @@
                         <FrameLayout
                             android:id="@+id/frameStackmatrcula9876"
                             android:layout_width="match_parent"
-                            android:layout_height="100dp"
+                            android:layout_height="92dp"
                             android:layout_marginTop="@dimen/_2pxv">
 
                             <androidx.constraintlayout.widget.ConstraintLayout
@@ -293,8 +293,7 @@
                                     style="@style/txtRamabhadra20"
                                     android:layout_width="250dp"
                                     android:layout_height="75dp"
-                                    android:gravity="end"
-                                    android:text="@string/msg_matr_cula_9876"
+                                    android:text="Matrícula: 9876MJH\u000A Tipo de repostaje: Híbrido"
                                     app:layout_constraintBottom_toBottomOf="parent"
                                     app:layout_constraintEnd_toEndOf="parent"
                                     app:layout_constraintTop_toTopOf="parent" />
@@ -332,8 +331,7 @@
                                 android:text="@string/msg_matr_cula_9898"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintTop_toTopOf="parent"
-                                tools:text="@string/msg_matr_cula_9898" />
+                                app:layout_constraintTop_toTopOf="parent" />
                         </androidx.constraintlayout.widget.ConstraintLayout>
                     </LinearLayout>
                 </LinearLayout>

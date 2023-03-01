@@ -23,6 +23,12 @@ public class VehiculosFragment extends Fragment {
     private ImageView inci;
     private ImageView plus;
     private TextView add;
+    private TextView v1;
+    private TextView v2;
+    private TextView v3;
+    private TextView v4;
+    private TextView v5;
+    private TextView v6;
 
     private NavController navController;
 
@@ -45,6 +51,12 @@ public class VehiculosFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         navController = Navigation.findNavController(view);
+        v1 = view.findViewById(R.id.txtMat);
+        v2 = view.findViewById(R.id.txtMatri);
+        v3 = view.findViewById(R.id.txtMattric);
+        v4 = view.findViewById(R.id.txtMatrcula);
+        v5 = view.findViewById(R.id.txtMatrculaa);
+        v6 = view.findViewById(R.id.txtMatrculaB);
         map = view.findViewById(R.id.imageMap);
 
         map.setOnClickListener(new View.OnClickListener() {
@@ -78,6 +90,42 @@ public class VehiculosFragment extends Fragment {
         });
         add = view.findViewById(R.id.txtAadirvehculo);
         add.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.modificarVehiculoFragment);
+            }
+        });
+        v1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.modificarVehiculoFragment);
+            }
+        });
+        v2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.modificarVehiculoFragment);
+            }
+        });
+        v3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.modificarVehiculoFragment);
+            }
+        });
+        v4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.modificarVehiculoFragment);
+            }
+        });
+        v5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.modificarVehiculoFragment);
+            }
+        });
+        v6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 navController.navigate(R.id.modificarVehiculoFragment);

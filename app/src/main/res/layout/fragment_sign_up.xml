@@ -56,7 +56,8 @@
             android:background="@drawable/rectangle_bg_bluegray_100_radius_20"
             app:layout_constraintBottom_toTopOf="@+id/txtPorseguridad"
             app:layout_constraintStart_toStartOf="@+id/txtPorseguridad"
-            app:layout_constraintTop_toBottomOf="@+id/txtComoquieresq" />
+            app:layout_constraintTop_toBottomOf="@+id/txtComoquieresq"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <TextView
             android:id="@+id/txtPorseguridad"
@@ -81,7 +82,8 @@
             android:background="@drawable/rectangle_bg_bluegray_100_radius_20"
             app:layout_constraintBottom_toTopOf="@+id/txtIntroduceunac"
             app:layout_constraintStart_toStartOf="@+id/txtIntroduceunac"
-            app:layout_constraintTop_toBottomOf="@+id/txtPorseguridad" />
+            app:layout_constraintTop_toBottomOf="@+id/txtPorseguridad"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <TextView
             android:id="@+id/txtIntroduceunac"
@@ -106,7 +108,8 @@
             android:background="@drawable/rectangle_bg_bluegray_100_radius_20"
             app:layout_constraintBottom_toTopOf="@+id/txtRepitelanueva"
             app:layout_constraintStart_toStartOf="@+id/txtRepitelanueva"
-            app:layout_constraintTop_toBottomOf="@+id/txtIntroduceunac" />
+            app:layout_constraintTop_toBottomOf="@+id/txtIntroduceunac"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <TextView
             android:id="@+id/txtRepitelanueva"
@@ -129,14 +132,15 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="10dp"
             android:background="@drawable/rectangle_bg_bluegray_100_radius_20"
-            app:layout_constraintBottom_toTopOf="@+id/buttonAceptar"
+            app:layout_constraintBottom_toTopOf="@+id/modAceptar"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtRepitelanueva" />
+            app:layout_constraintTop_toBottomOf="@+id/txtRepitelanueva"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <TextView
-            android:id="@+id/buttonAceptar"
+            android:id="@+id/modAceptar"
             style="@style/btnSolidRounded"
             android:layout_width="295dp"
             android:layout_height="65dp"
@@ -163,7 +167,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/buttonAceptar"
+            app:layout_constraintTop_toBottomOf="@+id/modAceptar"
             tools:text="@string/lbl_cancelar" />
 
 

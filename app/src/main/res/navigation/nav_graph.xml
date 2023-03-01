@@ -51,9 +51,9 @@
         tools:layout="@layout/fragment_add_vehiculo" />
     <fragment
         android:id="@+id/modificarVehiculoFragment"
-        android:name="com.example.fuelonroad.ModificarVehiculoFragment"
+        android:name="com.example.fuelonroad.AddVehiculoFragment"
         android:label="fragment_modificar_vehiculo"
-        tools:layout="@layout/fragment_modificar_vehiculo" />
+        tools:layout="@layout/fragment_add_vehiculo" />
     <fragment
         android:id="@+id/chatFragment"
         android:name="com.example.fuelonroad.ChatFragment"

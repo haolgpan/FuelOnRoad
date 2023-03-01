@@ -44,7 +44,7 @@ public class Recover2Fragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         navController = Navigation.findNavController(view);
-        aceptar = view.findViewById(R.id.buttonAceptar);
+        aceptar = view.findViewById(R.id.modAceptar);
         cancelar = view.findViewById(R.id.buttonCancelar);
 
         aceptar.setOnClickListener(new View.OnClickListener() {
