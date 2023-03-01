@@ -25,6 +25,7 @@ import org.osmdroid.views.MapView;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -45,7 +46,7 @@ public class MapsFragment extends Fragment {
     private ImageView inci;
     private ImageView car;
 
-    NavController navController;
+    private NavController navController;
     private MapController mapController;
 
     @Override
@@ -53,28 +54,6 @@ public class MapsFragment extends Fragment {
         Configuration.getInstance().load(getContext(), androidx.preference.PreferenceManager.getDefaultSharedPreferences(getContext()));
         View rootView = inflater.inflate(R.layout.fragment_maps, container, false);
 
-        car = rootView.findViewById(R.id.imageNdiceOne);
-        car.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                navController.navigate(R.id.vehiculosFragment);
-            }
-        });
-
-        social = rootView.findViewById(R.id.imageSettings);
-        social.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                navController.navigate(R.id.chatFragment);
-            }
-        });
-        inci = rootView.findViewById(R.id.imageWarning);
-        inci.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                navController.navigate(R.id.incidenciasFragment);
-            }
-        });
 
         mapView = rootView.findViewById(R.id.mapView);
         mapView.setTileSource(TileSourceFactory.MAPNIK);
@@ -107,5 +86,33 @@ public class MapsFragment extends Fragment {
     public void onDestroyView() {
         super.onDestroyView();
         mapView.onDetach();
+    }
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        navController = Navigation.findNavController(view);
+
+        car = view.findViewById(R.id.imageSettings);
+        car.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.vehiculosFragment);
+            }
+        });
+
+        social = view.findViewById(R.id.imageNdiceOne);
+        social.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.chatFragment);
+            }
+        });
+        inci = view.findViewById(R.id.imageWarning);
+        inci.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.incidenciasFragment);
+            }
+        });
     }
 }
