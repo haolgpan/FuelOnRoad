@@ -21,6 +21,8 @@ public class VehiculosFragment extends Fragment {
     private ImageView repo;
     private ImageView social;
     private ImageView inci;
+    private ImageView plus;
+    private TextView add;
 
     private NavController navController;
 
@@ -65,6 +67,20 @@ public class VehiculosFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 navController.navigate(R.id.incidenciasFragment);
+            }
+        });
+        plus = view.findViewById(R.id.imageEditpluscir);
+        plus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.modificarVehiculoFragment);
+            }
+        });
+        add = view.findViewById(R.id.txtAadirvehculo);
+        add.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.modificarVehiculoFragment);
             }
         });
 

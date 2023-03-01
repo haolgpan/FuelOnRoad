@@ -89,7 +89,7 @@
             android:fillViewport="true"
             android:gravity="center_horizontal"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.578"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/searchViewGroupForty">
 
@@ -345,13 +345,16 @@
             style="@style/txtInterbold20"
             android:layout_width="193dp"
             android:layout_height="33dp"
-            android:layout_marginEnd="48dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"
             android:layout_weight="0.82"
             android:ellipsize="end"
             android:singleLine="true"
             android:text="@string/lbl_a_adir_veh_culo"
             app:layout_constraintBottom_toTopOf="@+id/linearRowndiceone"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imageEditpluscir"
             app:layout_constraintTop_toBottomOf="@+id/scrollViewScrollview"
             app:layout_constraintVertical_bias="0.505"
             tools:text="@string/lbl_a_adir_veh_culo" />
@@ -360,15 +363,17 @@
             android:id="@+id/imageEditpluscir"
             android:layout_width="@dimen/_32pxh"
             android:layout_height="@dimen/_31pxh"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"
             android:scaleType="fitXY"
             android:src="@drawable/img_editpluscir"
             app:layout_constraintBottom_toTopOf="@+id/linearRowndiceone"
+            app:layout_constraintEnd_toEndOf="@+id/txtAadirvehculo"
             app:layout_constraintEnd_toStartOf="@+id/txtAadirvehculo"
-            app:layout_constraintHorizontal_bias="0.8"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/scrollViewScrollview"
-            app:layout_constraintVertical_bias="0.511"
-            tools:ignore="ContentDescription" />
+            app:layout_constraintVertical_bias="0.511" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/linearRowndiceone"
@@ -377,7 +382,6 @@
             android:layout_height="wrap_content"
             android:layout_gravity="start"
             android:orientation="horizontal"
-
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent">
@@ -396,8 +400,7 @@
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toEndOf="@+id/viewRectangle925"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:ignore="ContentDescription"
-                tools:src="@drawable/img_map" />
+                tools:ignore="ContentDescription" />
 
             <ImageView
                 android:id="@+id/imageGasdarkblueOne"

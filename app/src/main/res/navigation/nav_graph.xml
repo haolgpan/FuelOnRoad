@@ -89,4 +89,9 @@
         android:name="com.example.fuelonroad.IncidenciaChatFragment"
         android:label="fragment_incidencia_chat"
         tools:layout="@layout/fragment_incidencia_chat" />
+    <fragment
+        android:id="@+id/mapRepoFragment"
+        android:name="com.example.fuelonroad.MapRepoFragment"
+        android:label="fragment_map_repo"
+        tools:layout="@layout/fragment_map_repo" />
 </navigation>
