@@ -17,12 +17,12 @@ import android.widget.TextView;
 
 public class VehiculosFragment extends Fragment {
 
-    ImageView map;
-    ImageView repo;
-    ImageView social;
-    ImageView inci;
+    private ImageView map;
+    private ImageView repo;
+    private ImageView social;
+    private ImageView inci;
 
-    NavController navController;
+    private NavController navController;
 
     public VehiculosFragment() {
         // Required empty public constructor
@@ -44,6 +44,7 @@ public class VehiculosFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         navController = Navigation.findNavController(view);
         map = view.findViewById(R.id.imageMap);
+
         map.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -57,6 +58,13 @@ public class VehiculosFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 navController.navigate(R.id.chatFragment);
+            }
+        });
+        inci = view.findViewById(R.id.imageWarning);
+        inci.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.incidenciasFragment);
             }
         });
 

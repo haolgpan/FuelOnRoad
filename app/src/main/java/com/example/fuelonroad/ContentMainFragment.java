@@ -16,6 +16,7 @@ import android.widget.TextView;
 public class ContentMainFragment extends Fragment {
     TextView login;
     TextView registro;
+    TextView recover;
     NavController navController;
 
     public ContentMainFragment() {
@@ -40,6 +41,7 @@ public class ContentMainFragment extends Fragment {
         navController = Navigation.findNavController(view);
         login = view.findViewById(R.id.buttonLogin);
         registro = view.findViewById(R.id.buttonRegistro);
+        recover = view.findViewById(R.id.txtRecordarcontra);
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,7 +52,13 @@ public class ContentMainFragment extends Fragment {
         registro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.actualizarPerfilFragment);
+                navController.navigate(R.id.signInFragment);
+            }
+        });
+        recover.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.recover1Fragment);
             }
         });
     }

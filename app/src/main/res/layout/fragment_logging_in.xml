@@ -46,7 +46,7 @@
             app:layout_constraintStart_toStartOf="parent"
             tools:text="@string/msg_introduce_el_n" />
 
-        <android.inputmethodservice.ExtractEditText
+        <EditText
             android:id="@+id/fieldContrasenya"
             android:layout_width="355dp"
             android:layout_height="57dp"
@@ -55,7 +55,8 @@
             android:background="@drawable/rectangle_bg_bluegray_100_radius_20"
             app:layout_constraintBottom_toTopOf="@+id/fieldDni"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <TextView
             android:id="@+id/fieldDni"
@@ -72,7 +73,7 @@
             app:layout_constraintStart_toStartOf="parent"
             tools:text="@string/msg_introduce_la_co" />
 
-        <android.inputmethodservice.ExtractEditText
+        <EditText
             android:id="@+id/viewRectangleTwentyFour"
             android:layout_width="355dp"
             android:layout_height="57dp"
@@ -81,7 +82,8 @@
             android:background="@drawable/rectangle_bg_bluegray_100_radius_20"
             app:layout_constraintBottom_toTopOf="@+id/buttonLogin"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <TextView
             android:id="@+id/buttonLogin"

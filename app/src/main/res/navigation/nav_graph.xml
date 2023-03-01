@@ -34,7 +34,11 @@
         android:id="@+id/recover3Fragment"
         android:name="com.example.fuelonroad.Recover3Fragment"
         android:label="fragment_recover3"
-        tools:layout="@layout/fragment_recover3" />
+        tools:layout="@layout/fragment_recover3" >
+        <action
+            android:id="@+id/action_recover3Fragment_to_contentMainFragment"
+            app:destination="@id/contentMainFragment" />
+    </fragment>
     <fragment
         android:id="@+id/mapsFragment"
         android:name="com.example.fuelonroad.MapsFragment"

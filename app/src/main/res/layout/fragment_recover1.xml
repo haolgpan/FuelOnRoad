@@ -40,16 +40,17 @@
             app:layout_constraintTop_toBottomOf="@+id/imageSmartphonew"
             tools:text="@string/msg_introduce_el_te" />
 
-        <android.inputmethodservice.ExtractEditText
+        <EditText
             android:id="@+id/viewRectangleTwentyFive2"
             android:layout_width="330dp"
-            android:layout_height="40dp"
+            android:layout_height="48dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="15dp"
             android:background="@drawable/rectangle_bg_bluegray_100_radius_20"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtLanguage" />
+            app:layout_constraintTop_toBottomOf="@+id/txtLanguage"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <TextView
             android:id="@+id/buttonAceptar"
