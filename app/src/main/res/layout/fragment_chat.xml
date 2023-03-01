@@ -417,99 +417,112 @@
             app:layout_constraintTop_toBottomOf="@+id/txtTime"
             tools:text="@string/lbl_maciej_kowalski" />
 
-        <LinearLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/linearRowndiceone"
             style="@style/groupStylelime_600_7f"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
             android:orientation="horizontal"
+            android:layout_marginTop="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtKrysiaEurydyka"
-            tools:layout_editor_absoluteX="0dp">
-
-            <ImageView
-                android:id="@+id/imageNdiceOne"
-                android:layout_width="@dimen/_80pxh"
-                android:layout_height="@dimen/_52pxh"
-                android:layout_marginStart="@dimen/_5pxh"
-                android:layout_marginTop="@dimen/_12pxv"
-                android:layout_marginBottom="@dimen/_15pxv"
-                android:baselineAligned="false"
-                android:scaleType="fitXY"
-                tools:ignore="ContentDescription"
-                tools:src="@drawable/img_ndice2" />
+            app:layout_constraintVertical_bias="1.0">
 
             <ImageView
                 android:id="@+id/imageMap"
                 android:layout_width="@dimen/_43pxh"
-                android:layout_height="@dimen/_36pxh"
-                android:layout_marginStart="@dimen/_33pxh"
-                android:layout_marginTop="@dimen/_21pxv"
-                android:layout_marginBottom="@dimen/_21pxv"
-                android:baselineAligned="false"
+                android:layout_height="34dp"
+                android:layout_marginHorizontal="15dp"
                 android:scaleType="fitXY"
                 android:src="@drawable/img_map"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageGasdarkblueOne"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/imageSettings"
+                app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="ContentDescription"
                 tools:src="@drawable/img_map" />
 
             <ImageView
                 android:id="@+id/imageGasdarkblueOne"
                 android:layout_width="@dimen/_28pxh"
-                android:layout_height="@dimen/_42pxh"
-                android:layout_marginStart="@dimen/_51pxh"
-                android:layout_marginTop="@dimen/_17pxv"
-                android:layout_marginBottom="@dimen/_20pxv"
-                android:baselineAligned="false"
+                android:layout_height="0dp"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
                 android:scaleType="fitXY"
                 android:src="@drawable/img_gasdarkblue2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/viewRectangle925"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/imageMap"
+                app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="ContentDescription"
                 tools:src="@drawable/img_gasdarkblue2" />
 
-            <FrameLayout
-                android:id="@+id/frameStacksettings"
-                android:layout_width="@dimen/_69pxh"
-                android:layout_height="72dp"
-                android:layout_marginStart="@dimen/_30pxh"
-                android:layout_marginTop="@dimen/_6pxv"
-                android:layout_marginBottom="@dimen/_6pxv"
-                android:baselineAligned="false">
-
-                <ImageView
-                    android:id="@+id/imageSettings"
-                    android:layout_width="@dimen/_41pxh"
-                    android:layout_height="@dimen/_35pxh"
-                    android:layout_gravity="end"
-                    android:layout_marginStart="@dimen/_12pxh"
-                    android:layout_marginTop="@dimen/_14pxv"
-                    android:layout_marginEnd="@dimen/_12pxh"
-                    android:layout_marginBottom="@dimen/_14pxv"
-                    android:scaleType="fitXY"
-                    android:src="@drawable/img_settings"
-                    tools:ignore="ContentDescription"
-                    tools:src="@drawable/img_settings" />
-
-                <View
-                    android:id="@+id/viewRectangle925"
-                    android:layout_width="@dimen/_69pxh"
-                    android:layout_height="@dimen/_67pxh"
-                    android:layout_gravity="start"
-                    android:background="@drawable/rectangle_bg_bluegray_900_7f_radius_15" />
-            </FrameLayout>
+            <ImageView
+                android:id="@+id/imageSettings"
+                android:layout_width="@dimen/_41pxh"
+                android:layout_height="32dp"
+                android:layout_marginHorizontal="15dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_ndice2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageMap"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
                 android:id="@+id/imageWarning"
                 android:layout_width="@dimen/_45pxh"
-                android:layout_height="@dimen/_37pxh"
-                android:layout_marginStart="@dimen/_19pxh"
-                android:layout_marginTop="@dimen/_18pxv"
-                android:layout_marginEnd="@dimen/_22pxh"
-                android:layout_marginBottom="@dimen/_23pxv"
-                android:baselineAligned="false"
+                android:layout_height="34dp"
+                android:layout_marginHorizontal="15dp"
                 android:scaleType="fitXY"
                 android:src="@drawable/img_warning"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/viewRectangle925"
+                app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="ContentDescription"
                 tools:src="@drawable/img_warning" />
-        </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/viewRectangle925"
+                android:layout_width="50dp"
+                android:layout_height="0dp"
+                android:layout_gravity="start"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/rectangle_bg_bluegray_900_radius_15"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageWarning"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/imageGasdarkblueOne"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/imageNdiceOne"
+                    android:layout_width="31dp"
+                    android:layout_height="30dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:scaleType="fitXY"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.526"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.2"
+                    tools:ignore="ContentDescription"
+                    tools:src="@drawable/img_settings" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

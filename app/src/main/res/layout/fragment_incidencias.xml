@@ -1,14 +1,514 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".IncidenciasFragment">
+    android:fillViewport="true">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
+        style="@style/groupStylebluegray_900"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        tools:context=".IncidenciasFragment">
 
-</FrameLayout>
+        <TextView
+            android:id="@+id/txtMisconversacio"
+            style="@style/txtRobotoromanbold20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="32dp"
+            android:ellipsize="end"
+            android:letterSpacing="0.05"
+            android:singleLine="true"
+            android:text="@string/msg_mis_conversacio"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.071"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/msg_mis_conversacio" />
+
+        <TextView
+            android:id="@+id/txtSearch"
+            style="@style/groupStylegray_700cornerRadius"
+            android:layout_width="257dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+            android:ellipsize="end"
+            android:fontFamily="helvetica"
+            android:gravity="start"
+            android:letterSpacing="0.05"
+            android:singleLine="true"
+            android:text="@string/lbl_search"
+            android:textColor="@color/white_A700_99"
+            android:textSize="25dp"
+            app:layout_constraintStart_toStartOf="@+id/txtMisconversacio"
+            app:layout_constraintTop_toBottomOf="@+id/txtMisconversacio"
+            tools:targetApi="p"
+            tools:text="@string/lbl_search" />
+
+        <TextView
+            android:id="@+id/btnTwo"
+            style="@style/btnSolidRounded_2"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:letterSpacing="0.05"
+            android:singleLine="true"
+            android:text="+"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/txtSearch"
+            app:layout_constraintTop_toBottomOf="@+id/txtMisconversacio"
+            tools:text="@string/lbl2" />
+
+        <ImageButton
+            android:id="@+id/btnSubtract"
+            android:layout_width="45dp"
+            android:layout_height="35dp"
+            android:layout_gravity="end"
+            android:background="@drawable/rectangle_bg_gray_700_radius_10"
+            android:paddingHorizontal="@dimen/_10pxh"
+            android:paddingVertical="@dimen/_10pxv"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_subtract"
+            app:layout_constraintBottom_toBottomOf="@+id/txtSearch"
+            app:layout_constraintEnd_toEndOf="@+id/txtSearch"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/txtSearch"
+            app:layout_constraintTop_toTopOf="@+id/txtSearch"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/txtChatrooms"
+            style="@style/txtRobotoregular20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="16dp"
+            android:ellipsize="end"
+            android:letterSpacing="0.05"
+            android:singleLine="true"
+            android:text="@string/lbl_chatrooms"
+            app:layout_constraintStart_toStartOf="@+id/txtSearch"
+            app:layout_constraintTop_toBottomOf="@+id/txtSearch"
+            tools:text="@string/lbl_chatrooms" />
+
+        <TextView
+            android:id="@+id/txtTime"
+            style="@style/txtRobotoregular15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="28dp"
+            android:ellipsize="end"
+            android:letterSpacing="0.05"
+            android:singleLine="true"
+            android:text="@string/lbl_08_43"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtChatrooms"
+            tools:text="@string/lbl_08_43" />
+
+        <ImageView
+            android:id="@+id/imageImageOne"
+            android:layout_width="@dimen/_46pxh"
+            android:layout_height="@dimen/_44pxh"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtOdeuszPiotrows"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/img_image_44x46" />
+
+        <TextView
+            android:id="@+id/txtMarCounterOne"
+            style="@style/txtRobotoregular15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:ellipsize="end"
+            android:letterSpacing="0.05"
+            android:singleLine="true"
+            android:text="@string/lbl_18_mar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtHereisanother"
+            tools:text="@string/lbl_18_mar" />
+
+        <TextView
+            android:id="@+id/txtOdeuszPiotrows"
+            style="@style/txtRobotoregular15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:ellipsize="end"
+            android:letterSpacing="0.05"
+            android:singleLine="true"
+            android:text="@string/msg_odeusz_piotrows"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtTue"
+            tools:text="@string/msg_odeusz_piotrows" />
+
+        <TextView
+            android:id="@+id/txtMaciejOrowski"
+            style="@style/txtRobotoregular15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:ellipsize="end"
+            android:letterSpacing="0.05"
+            android:singleLine="true"
+            android:text="@string/lbl_maciej_or_owski"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtMarCounter"
+            tools:text="@string/lbl_maciej_or_owski" />
+
+        <ImageView
+            android:id="@+id/imageImageThree"
+            android:layout_width="@dimen/_46pxh"
+            android:layout_height="@dimen/_44pxh"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtBoenkaMalina"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/img_image_1" />
+
+        <TextView
+            android:id="@+id/txtWilldosuper"
+            style="@style/txtRobotolight13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="1dp"
+            android:ellipsize="end"
+            android:letterSpacing="0.05"
+            android:singleLine="true"
+            android:text="@string/msg_will_do_super"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageGroup"
+            tools:text="@string/msg_will_do_super" />
+
+        <ImageView
+            android:id="@+id/imageFavorite"
+            android:layout_width="@dimen/_17pxh"
+            android:layout_height="@dimen/_15pxh"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_favorite"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageImageOne"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/img_favorite" />
+
+        <ImageView
+            android:id="@+id/imageImageFour"
+            android:layout_width="@dimen/_46pxh"
+            android:layout_height="@dimen/_44pxh"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtMaciejOrowski"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/img_image_2" />
+
+        <TextView
+            android:id="@+id/txtEmail"
+            style="@style/txtRobotolight13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:ellipsize="end"
+            android:letterSpacing="0.05"
+            android:singleLine="true"
+            android:text="@string/msg_maciej_kowalski"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageImage"
+            tools:text="@string/msg_maciej_kowalski" />
+
+        <TextView
+            android:id="@+id/txtBoenkaMalina"
+            style="@style/txtRobotoregular15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:ellipsize="end"
+            android:letterSpacing="0.05"
+            android:singleLine="true"
+            android:text="@string/lbl_bo_enka_malina"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtSun"
+            tools:text="@string/lbl_bo_enka_malina" />
+
+        <TextView
+            android:id="@+id/txtSun"
+            style="@style/txtRobotoregular15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:ellipsize="end"
+            android:letterSpacing="0.05"
+            android:singleLine="true"
+            android:text="@string/lbl_sun"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtWilldosuper"
+            tools:text="@string/lbl_sun" />
+
+        <TextView
+            android:id="@+id/txtTue"
+            style="@style/txtRobotoregular15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:ellipsize="end"
+            android:letterSpacing="0.05"
+            android:singleLine="true"
+            android:text="@string/lbl_tue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtEmail"
+            tools:text="@string/lbl_tue" />
+
+        <ImageView
+            android:id="@+id/imageImage"
+            android:layout_width="@dimen/_46pxh"
+            android:layout_height="@dimen/_44pxh"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtMaciejKowalski"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/img_image" />
+
+        <TextView
+            android:id="@+id/txtMarCounter"
+            style="@style/txtRobotoregular15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:ellipsize="end"
+            android:letterSpacing="0.05"
+            android:singleLine="true"
+            android:text="@string/lbl_23_mar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtUploadedfile"
+            tools:text="@string/lbl_23_mar" />
+
+        <TextView
+            android:id="@+id/txtUploadedfile"
+            style="@style/txtRobotolight13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:ellipsize="end"
+            android:letterSpacing="0.05"
+            android:singleLine="true"
+            android:text="@string/lbl_uploaded_file"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageImageThree"
+            tools:text="@string/lbl_uploaded_file" />
+
+        <ImageView
+            android:id="@+id/imageGroup"
+            android:layout_width="@dimen/_15pxh"
+            android:layout_height="@dimen/_15pxh"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_group"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageFavorite"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/img_group" />
+
+        <TextView
+            android:id="@+id/txtHereisanother"
+            style="@style/txtRobotolight13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:ellipsize="end"
+            android:letterSpacing="0.05"
+            android:singleLine="true"
+            android:text="@string/msg_here_is_another"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageImageFour"
+            tools:text="@string/msg_here_is_another" />
+
+        <TextView
+            android:id="@+id/txtKrysiaEurydyka"
+            style="@style/txtRobotoregular15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:ellipsize="end"
+            android:letterSpacing="0.05"
+            android:singleLine="true"
+            android:text="@string/lbl_krysia_eurydyka"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtMarCounterOne"
+            tools:text="@string/lbl_krysia_eurydyka" />
+
+        <TextView
+            android:id="@+id/txtMaciejKowalski"
+            style="@style/txtRobotoregular15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="1dp"
+            android:ellipsize="end"
+            android:letterSpacing="0.05"
+            android:singleLine="true"
+            android:text="@string/lbl_maciej_kowalski"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtTime"
+            tools:text="@string/lbl_maciej_kowalski" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearRowndiceone"
+            style="@style/groupStylelime_600_7f"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtKrysiaEurydyka"
+            app:layout_constraintVertical_bias="1.0">
+
+            <ImageView
+                android:id="@+id/imageMap"
+                android:layout_width="@dimen/_43pxh"
+                android:layout_height="34dp"
+                android:layout_marginHorizontal="15dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_map"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageGasdarkblueOne"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/imageSettings"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="ContentDescription"
+                tools:src="@drawable/img_map" />
+
+            <ImageView
+                android:id="@+id/imageGasdarkblueOne"
+                android:layout_width="@dimen/_28pxh"
+                android:layout_height="0dp"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_gasdarkblue2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/viewRectangle925"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/imageMap"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="ContentDescription"
+                tools:src="@drawable/img_gasdarkblue2" />
+
+            <ImageView
+                android:id="@+id/imageSettings"
+                android:layout_width="@dimen/_41pxh"
+                android:layout_height="32dp"
+                android:layout_marginHorizontal="15dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_ndice2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageMap"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageWarning"
+                android:layout_width="@dimen/_45pxh"
+                android:layout_height="34dp"
+                android:layout_marginHorizontal="15dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_warning"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/viewRectangle925"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="ContentDescription"
+                tools:src="@drawable/img_warning" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/viewRectangle925"
+                android:layout_width="50dp"
+                android:layout_height="0dp"
+                android:layout_gravity="start"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/rectangle_bg_bluegray_900_radius_15"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageWarning"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/imageGasdarkblueOne"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/imageNdiceOne"
+                    android:layout_width="31dp"
+                    android:layout_height="30dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:scaleType="fitXY"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.526"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.2"
+                    tools:ignore="ContentDescription"
+                    tools:src="@drawable/img_settings" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

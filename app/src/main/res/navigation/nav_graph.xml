@@ -75,4 +75,14 @@
         android:name="com.example.fuelonroad.VehiculosModFragment"
         android:label="fragment_vehiculos_mod"
         tools:layout="@layout/fragment_vehiculos_mod" />
+    <fragment
+        android:id="@+id/chatTextFragment"
+        android:name="com.example.fuelonroad.ChatTextFragment"
+        android:label="fragment_chat_text"
+        tools:layout="@layout/fragment_chat_text" />
+    <fragment
+        android:id="@+id/incidenciaChatFragment"
+        android:name="com.example.fuelonroad.IncidenciaChatFragment"
+        android:label="fragment_incidencia_chat"
+        tools:layout="@layout/fragment_incidencia_chat" />
 </navigation>

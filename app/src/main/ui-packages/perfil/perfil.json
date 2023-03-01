@@ -1,0 +1,804 @@
+{
+  "name": "perfil",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "i4yzufIw4N6jEoPUJzK28Z",
+    "node": "175:3748",
+    "version": "3077829013",
+    "component-id": "cb8a1296673b2ac9a47a5f9afc42ddbb3360d604"
+  },
+  "default": "Perfil",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 42"
+      },
+      {
+        "type": "image",
+        "id": "istockphoto-1300512215-612x612 1"
+      },
+      {
+        "type": "group",
+        "id": "Group 50"
+      },
+      {
+        "type": "group",
+        "id": "Group 51"
+      },
+      {
+        "type": "group",
+        "id": "Group 52"
+      },
+      {
+        "type": "group",
+        "id": "Group 53"
+      },
+      {
+        "type": "group",
+        "id": "Group 49"
+      },
+      {
+        "type": "text",
+        "id": "Mi perfil"
+      },
+      {
+        "type": "group",
+        "id": "chevron-forward"
+      },
+      {
+        "type": "vector",
+        "id": "Ellipse 335"
+      },
+      {
+        "type": "group",
+        "id": "person-outline"
+      },
+      {
+        "type": "vector",
+        "id": "Vector"
+      },
+      {
+        "type": "vector",
+        "id": "Vector1"
+      },
+      {
+        "type": "vector",
+        "id": "Vector2"
+      },
+      {
+        "type": "text",
+        "id": "Mis vehículos"
+      },
+      {
+        "type": "group",
+        "id": "chevron-forward1"
+      },
+      {
+        "type": "image",
+        "id": "índice 2"
+      },
+      {
+        "type": "vector",
+        "id": "Vector3"
+      },
+      {
+        "type": "text",
+        "id": "Mis incidencias"
+      },
+      {
+        "type": "group",
+        "id": "chevron-forward2"
+      },
+      {
+        "type": "group",
+        "id": "attention / warning_outline"
+      },
+      {
+        "type": "vector",
+        "id": "Vector4"
+      },
+      {
+        "type": "vector",
+        "id": "Vector5"
+      },
+      {
+        "type": "text",
+        "id": "Mis rutas"
+      },
+      {
+        "type": "group",
+        "id": "chevron-forward3"
+      },
+      {
+        "type": "image",
+        "id": "images-removebg-preview 2"
+      },
+      {
+        "type": "vector",
+        "id": "Vector6"
+      }
+    ],
+    "modes": {
+      "Perfil": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "Rectangle 42",
+              "istockphoto-1300512215-612x612 1",
+              "Group 50",
+              "Group 51",
+              "Group 52",
+              "Group 53"
+            ],
+            "background-color": {
+              "alpha": "0.8980392156862745",
+              "hue": "218.18181818181822",
+              "saturation": "0.050925925925925875",
+              "value": "0.8470588235294118"
+            }
+          },
+          {
+            "id": "Rectangle 42",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "1.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "248.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "210.0"
+              }
+            },
+            "vector-content": "rectangle_42.svg"
+          },
+          {
+            "id": "istockphoto-1300512215-612x612 1",
+            "border-radius": "10.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "54.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "34.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "141.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "143.0"
+              }
+            },
+            "image-content": "istockphoto_1300512215_612x612_1.jpeg",
+            "scale": "cover"
+          },
+          {
+            "id": "Group 50",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "9.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "280.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "207.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "27.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Group 49",
+              "Mi perfil",
+              "chevron-forward"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Group 51",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "3.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "324.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "213.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "36.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Mis vehículos",
+              "chevron-forward1",
+              "índice 2"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Group 52",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "9.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "371.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "207.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "31.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Mis incidencias",
+              "chevron-forward2",
+              "attention / warning_outline"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Group 53",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "9.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "419.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "207.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "34.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Mis rutas",
+              "chevron-forward3",
+              "images-removebg-preview 2"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Group 49",
+            "drop-shadow": {
+              "color": {
+                "alpha": "0.24705882352941178",
+                "hue": "0.0",
+                "saturation": "0.0",
+                "value": "0.0"
+              },
+              "blur": "4.0",
+              "offset-x": "0.0",
+              "offset-y": "4.0",
+              "spread": "0.0",
+              "blend-mode": "normal"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "30.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "27.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Ellipse 335",
+              "person-outline"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Mi perfil",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "45.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "3.0"
+              }
+            },
+            "font-weight": "700.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "44.32835820895523",
+              "saturation": "0.6350710900473933",
+              "value": "0.8274509803921568"
+            },
+            "text-content": "Mi perfil",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-size": "20.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "chevron-forward",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "182.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "2.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "25.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "25.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Vector2"
+            ]
+          },
+          {
+            "id": "Ellipse 335",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "30.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "27.0"
+              }
+            },
+            "vector-content": "ellipse_335.svg"
+          },
+          {
+            "id": "person-outline",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "7.5"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "6.75"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "15.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "13.5"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Vector",
+              "Vector1"
+            ]
+          },
+          {
+            "id": "Vector",
+            "margin": {
+              "left": "4.91357421875",
+              "top": "1.265625",
+              "right": "4.91357421875",
+              "bottom": "7.171875"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "vector.svg"
+          },
+          {
+            "id": "Vector1",
+            "margin": {
+              "left": "1.875",
+              "top": "8.015625",
+              "right": "1.87451171875",
+              "bottom": "1.265625"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "vector1.svg"
+          },
+          {
+            "id": "Vector2",
+            "margin": {
+              "left": "8.984375",
+              "top": "5.46875",
+              "right": "8.984375",
+              "bottom": "5.46875"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "vector2.svg"
+          },
+          {
+            "id": "Mis vehículos",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "51.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "6.0"
+              }
+            },
+            "font-weight": "700.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "44.32835820895523",
+              "saturation": "0.6350710900473933",
+              "value": "0.8274509803921568"
+            },
+            "text-content": "Mis vehículos",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-size": "20.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "chevron-forward1",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "188.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "5.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "25.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "25.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Vector3"
+            ]
+          },
+          {
+            "id": "índice 2",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "43.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "36.0"
+              }
+            },
+            "image-content": "_ndice_2.png",
+            "scale": "cover"
+          },
+          {
+            "id": "Vector3",
+            "margin": {
+              "left": "8.984375",
+              "top": "5.46875",
+              "right": "8.984375",
+              "bottom": "5.46875"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "vector3.svg"
+          },
+          {
+            "id": "Mis incidencias",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "45.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "7.0"
+              }
+            },
+            "font-weight": "700.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "44.32835820895523",
+              "saturation": "0.6350710900473933",
+              "value": "0.8274509803921568"
+            },
+            "text-content": "Mis incidencias",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-size": "20.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "chevron-forward2",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "182.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "6.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "25.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "25.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Vector4"
+            ]
+          },
+          {
+            "id": "attention / warning_outline",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "30.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "31.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Vector5"
+            ]
+          },
+          {
+            "id": "Vector4",
+            "margin": {
+              "left": "8.984375",
+              "top": "5.46875",
+              "right": "8.984375",
+              "bottom": "5.46875"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "vector4.svg"
+          },
+          {
+            "id": "Vector5",
+            "margin": {
+              "left": "2.166259765625",
+              "top": "3.87359619140625",
+              "right": "2.170166015625",
+              "bottom": "3.8775634765625"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "vector5.svg"
+          },
+          {
+            "id": "Mis rutas",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "45.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "7.0"
+              }
+            },
+            "font-weight": "700.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "44.32835820895523",
+              "saturation": "0.6350710900473933",
+              "value": "0.8274509803921568"
+            },
+            "text-content": "Mis rutas",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-size": "20.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "chevron-forward3",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "182.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "6.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "25.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "25.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Vector6"
+            ]
+          },
+          {
+            "id": "images-removebg-preview 2",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "40.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "34.0"
+              }
+            },
+            "image-content": "images_removebg_preview_2.png",
+            "scale": "contain"
+          },
+          {
+            "id": "Vector6",
+            "margin": {
+              "left": "8.984375",
+              "top": "5.46875",
+              "right": "8.984375",
+              "bottom": "5.46875"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "vector6.svg"
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "Perfil",
+      "size": {
+        "width": 248.0,
+        "height": 920.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

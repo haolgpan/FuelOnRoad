@@ -40,7 +40,7 @@
             app:layout_constraintTop_toBottomOf="@+id/imageSmartphonew"
             tools:text="@string/msg_introduce_el_te" />
 
-        <View
+        <android.inputmethodservice.ExtractEditText
             android:id="@+id/viewRectangleTwentyFive2"
             android:layout_width="330dp"
             android:layout_height="40dp"

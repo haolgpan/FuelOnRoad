@@ -30,10 +30,9 @@
             android:id="@+id/viewRectangleTwentyFour"
             android:layout_width="330dp"
             android:layout_height="40dp"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="30dp"
             android:background="@drawable/rectangle_bg_bluegray_100_radius_20"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/txtQuetipodere"
             app:layout_constraintTop_toBottomOf="@+id/txtQuetipodere" />
 
         <TextView
@@ -41,8 +40,7 @@
             style="@style/btnSolidRounded"
             android:layout_width="295dp"
             android:layout_height="65dp"
-            android:layout_marginTop="290dp"
-            android:layout_marginBottom="50dp"
+            android:layout_marginTop="360dp"
             android:gravity="center"
             android:text="@string/lbl_aceptar"
             app:layout_constraintEnd_toEndOf="parent"

@@ -32,6 +32,7 @@ import org.osmdroid.tileprovider.tilesource.TileSourceFactory;
 import org.osmdroid.util.GeoPoint;
 import org.osmdroid.views.MapView;
 import org.osmdroid.views.MapController;
+import org.osmdroid.views.overlay.gestures.RotationGestureOverlay;
 
 public class MapsFragment extends Fragment {
     private MapView mapView;
@@ -46,8 +47,12 @@ public class MapsFragment extends Fragment {
         mapView.setTileSource(TileSourceFactory.MAPNIK);
 
         mapController = (MapController) mapView.getController();
-        mapController.setZoom(12);
+        mapController.setZoom(17);
         mapController.setCenter(new GeoPoint(41.3851, 2.1734)); // Barcelona coordinates
+        // Add rotation gesture overlay
+        RotationGestureOverlay rotationOverlay = new RotationGestureOverlay(mapView);
+        rotationOverlay.setEnabled(true);
+        mapView.getOverlays().add(rotationOverlay);
 
         mapView.setMultiTouchControls(true);
         return rootView;

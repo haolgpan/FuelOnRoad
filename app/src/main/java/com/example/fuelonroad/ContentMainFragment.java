@@ -50,7 +50,7 @@ public class ContentMainFragment extends Fragment {
         registro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.vehiculosModFragment);
+                navController.navigate(R.id.actualizarPerfilFragment);
             }
         });
     }
