@@ -81,14 +81,12 @@
 
         <ImageButton
             android:id="@+id/btnSubtract"
-            android:layout_width="45dp"
-            android:layout_height="35dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:layout_gravity="end"
             android:background="@drawable/rectangle_bg_gray_700_radius_10"
-            android:paddingHorizontal="@dimen/_10pxh"
-            android:paddingVertical="@dimen/_10pxv"
             android:scaleType="fitCenter"
-            android:src="@drawable/img_subtract"
+            app:srcCompat="@drawable/img_subtract"
             app:layout_constraintBottom_toBottomOf="@+id/txtSearch"
             app:layout_constraintEnd_toEndOf="@+id/txtSearch"
             app:layout_constraintHorizontal_bias="1.0"
@@ -138,7 +136,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtOdeuszPiotrows"
             tools:ignore="ContentDescription"
-            tools:src="@drawable/img_image_44x46" />
+            app:srcCompat="@drawable/img_image_44x46" />
 
         <TextView
             android:id="@+id/txtMarCounterOne"
@@ -199,7 +197,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtBoenkaMalina"
             tools:ignore="ContentDescription"
-            tools:src="@drawable/img_image_1" />
+            app:srcCompat="@drawable/img_image_1" />
 
         <TextView
             android:id="@+id/txtWilldosuper"
@@ -224,13 +222,12 @@
             android:layout_height="@dimen/_15pxh"
             android:layout_gravity="center_horizontal"
             android:scaleType="fitXY"
-            android:src="@drawable/img_favorite"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageImageOne"
             tools:ignore="ContentDescription"
-            tools:src="@drawable/img_favorite" />
+            app:srcCompat="@drawable/img_favorite" />
 
         <ImageView
             android:id="@+id/imageImageFour"
@@ -243,7 +240,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtMaciejOrowski"
             tools:ignore="ContentDescription"
-            tools:src="@drawable/img_image_2" />
+            app:srcCompat="@drawable/img_image_2" />
 
         <TextView
             android:id="@+id/txtEmail"
@@ -320,7 +317,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtMaciejKowalski"
             tools:ignore="ContentDescription"
-            tools:src="@drawable/img_image" />
+            app:srcCompat="@drawable/img_image" />
 
         <TextView
             android:id="@+id/txtMarCounter"
@@ -360,13 +357,12 @@
             android:layout_height="@dimen/_15pxh"
             android:layout_gravity="center_horizontal"
             android:scaleType="fitXY"
-            android:src="@drawable/img_group"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageFavorite"
             tools:ignore="ContentDescription"
-            tools:src="@drawable/img_group" />
+            app:srcCompat="@drawable/img_group" />
 
         <TextView
             android:id="@+id/txtHereisanother"
@@ -421,7 +417,7 @@
             android:id="@+id/linearRowndiceone"
             style="@style/groupStylelime_600_7f"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="55dp"
             android:layout_gravity="center_horizontal"
             android:orientation="horizontal"
             android:layout_marginTop="50dp"
@@ -519,7 +515,7 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.2"
                     tools:ignore="ContentDescription"
-                    tools:src="@drawable/img_settings" />
+                    app:srcCompat="@drawable/img_settings" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>

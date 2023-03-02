@@ -39,14 +39,13 @@ public class Recover2Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_recover1, container, false);
+        return inflater.inflate(R.layout.fragment_recover2, container, false);
     }
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         navController = Navigation.findNavController(view);
         aceptar = view.findViewById(R.id.modAceptar);
-        cancelar = view.findViewById(R.id.buttonCancelar);
         back = view.findViewById(R.id.imagePolygonOne);
 
         aceptar.setOnClickListener(new View.OnClickListener() {
@@ -55,12 +54,7 @@ public class Recover2Fragment extends Fragment {
                 navController.navigate(R.id.recover3Fragment);
             }
         });
-        cancelar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                navController.navigate(R.id.contentMainFragment);
-            }
-        });
+
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

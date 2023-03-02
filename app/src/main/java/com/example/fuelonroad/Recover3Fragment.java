@@ -3,7 +3,9 @@ package com.example.fuelonroad;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 
+import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -31,7 +33,24 @@ public class Recover3Fragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_recover3, container, false);
+        View view = inflater.inflate(R.layout.fragment_recover3, container, false);
+
+        // Create a Handler object
+        Handler handler = new Handler();
+
+        // Define a Runnable that performs the navigation
+        Runnable runnable = new Runnable() {
+            @Override
+            public void run() {
+                // Navigate to the other fragment
+                Navigation.findNavController(view).navigate(R.id.loggingInFragment);
+            }
+        };
+
+        // Post the runnable with a 3 second delay
+        handler.postDelayed(runnable, 2000);
+
+        return view;
+
     }
 }

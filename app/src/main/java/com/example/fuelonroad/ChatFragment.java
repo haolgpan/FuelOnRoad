@@ -26,6 +26,7 @@ public class ChatFragment extends Fragment {
     private ImageView repo;
     private ImageView inci;
     private ImageView car;
+
     private NavController navController;
 
     public ChatFragment() {
@@ -63,7 +64,7 @@ public class ChatFragment extends Fragment {
                 navController.navigate(R.id.mapsFragment);
             }
         });
-        inci = view.findViewById(R.id.imageWarning);
+        inci = view.findViewById(R.id.imageRemo);
         inci.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

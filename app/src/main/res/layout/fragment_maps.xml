@@ -16,7 +16,7 @@
         android:id="@+id/linearRowndiceone"
         style="@style/groupStylelime_600_7f"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="55dp"
         android:layout_gravity="center_horizontal"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -43,8 +43,8 @@
 
         <ImageView
             android:id="@+id/imageSettings"
-            android:layout_width="@dimen/_41pxh"
-            android:layout_height="32dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_marginHorizontal="15dp"
             android:scaleType="fitXY"
             app:srcCompat="@drawable/img_ndice2"

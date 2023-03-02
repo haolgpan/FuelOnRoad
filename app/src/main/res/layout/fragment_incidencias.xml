@@ -407,7 +407,7 @@
             android:id="@+id/linearRowndiceone"
             style="@style/groupStylelime_600_7f"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="55dp"
             android:layout_gravity="center_horizontal"
             android:orientation="horizontal"
             android:layout_marginTop="50dp"

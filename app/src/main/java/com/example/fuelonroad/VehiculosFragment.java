@@ -32,7 +32,6 @@ public class VehiculosFragment extends Fragment {
     private TextView v6;
 
     private NavController navController;
-    MainActivity activity = (MainActivity) getActivity();
 
     public VehiculosFragment() {
         // Required empty public constructor
@@ -41,15 +40,6 @@ public class VehiculosFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        OnBackPressedCallback callback = new OnBackPressedCallback(true /* enabled by default */) {
-            @Override
-            public void handleOnBackPressed() {
-                // Handle the back button even
-                activity.lockDrawer();
-            }
-        };
-
-        requireActivity().getOnBackPressedDispatcher().addCallback(this, callback);
     }
 
     @Override
@@ -61,6 +51,7 @@ public class VehiculosFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        MainActivity activity = (MainActivity) getActivity();
         activity.unlockDrawer();
         navController = Navigation.findNavController(view);
         v1 = view.findViewById(R.id.txtMat);
@@ -143,7 +134,12 @@ public class VehiculosFragment extends Fragment {
                 navController.navigate(R.id.action_vehiculosFragment_to_vehiculosModFragment);
             }
         });
+    }
 
-
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        MainActivity activity = (MainActivity) getActivity();
+        activity.lockDrawer();
     }
 }

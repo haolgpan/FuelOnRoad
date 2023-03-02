@@ -103,6 +103,7 @@
                         android:letterSpacing="0.05"
                         android:singleLine="true"
                         android:text="@string/msg_odeusz_piotrows"
+                        tools:ignore="TextSizeCheck"
                         tools:text="@string/msg_odeusz_piotrows" />
                 </LinearLayout>
 
@@ -119,6 +120,7 @@
                     android:letterSpacing="0.05"
                     android:singleLine="true"
                     android:text="@string/lbl_1_feb_12_00"
+                    tools:ignore="TextSizeCheck"
                     tools:text="@string/lbl_1_feb_12_00" />
 
                 <LinearLayout
@@ -143,7 +145,8 @@
                         android:layout_marginBottom="@dimen/_8pxv"
                         android:gravity="start"
                         android:letterSpacing="0.05"
-                        android:text="@string/msg_i_commented_on" />
+                        android:text="@string/msg_i_commented_on"
+                        tools:ignore="TextSizeCheck" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -168,7 +171,8 @@
                         android:layout_marginBottom="@dimen/_10pxv"
                         android:gravity="center_horizontal"
                         android:letterSpacing="0.05"
-                        android:text="@string/msg_i_am_in_a_proce"/>
+                        android:text="@string/msg_i_am_in_a_proce"
+                        tools:ignore="TextSizeCheck" />
                 </LinearLayout>
 
                 <androidx.appcompat.widget.AppCompatButton
@@ -190,6 +194,7 @@
                     android:singleLine="true"
                     android:text="@string/lbl_next_month"
                     android:textAllCaps="false"
+                    tools:ignore="TextSizeCheck"
                     tools:text="@string/lbl_next_month" />
 
                 <TextView
@@ -231,6 +236,7 @@
                         android:gravity="center_horizontal"
                         android:letterSpacing="0.05"
                         android:text="@string/msg_i_am_almost_fin"
+                        tools:ignore="TextSizeCheck"
                         tools:text="@string/msg_i_am_almost_fin" />
                 </LinearLayout>
 
@@ -249,6 +255,7 @@
                     android:singleLine="true"
                     android:text="@string/lbl3"
                     android:textColor="@color/white"
+                    tools:ignore="TextSizeCheck"
                     tools:text="@string/lbl3" />
 
                 <LinearLayout android:gravity="start"
@@ -262,12 +269,15 @@
                     <FrameLayout android:id="@+id/frameStackrectangle"
                         android:layout_height="@dimen/_39pxv"
                         android:layout_width="@dimen/_312pxh">
+
                         <EditText
-                            android:background="@drawable/rectangle_bg_black_900_3f_radius_10"
                             android:id="@+id/viewRectangle"
-                            android:layout_gravity="center"
+                            android:layout_width="@dimen/_312pxh"
                             android:layout_height="@dimen/_39pxv"
-                            android:layout_marginEnd="@dimen/_1pxh" android:layout_width="@dimen/_312pxh"/>
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="@dimen/_1pxh"
+                            android:background="@drawable/rectangle_bg_black_900_3f_radius_10"
+                            tools:ignore="SpeakableTextPresentCheck" />
                         <FrameLayout
                             android:id="@+id/frameStacklightbulb"
                             android:layout_gravity="end"

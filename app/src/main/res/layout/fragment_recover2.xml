@@ -26,15 +26,16 @@
             app:layout_constraintTop_toTopOf="parent"
             tools:text="@string/msg_introduce_el_c" />
 
-        <android.inputmethodservice.ExtractEditText
+        <EditText
             android:id="@+id/cod_verif"
             android:layout_width="330dp"
-            android:layout_height="40dp"
+            android:layout_height="48dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="15dp"
             android:background="@drawable/rectangle_bg_bluegray_100_radius_20"
             app:layout_constraintStart_toStartOf="@+id/repeat_contra"
-            app:layout_constraintTop_toBottomOf="@+id/repeat_contra" />
+            app:layout_constraintTop_toBottomOf="@+id/repeat_contra"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <TextView
             android:id="@+id/contra"
@@ -48,15 +49,16 @@
             app:layout_constraintTop_toBottomOf="@+id/introduce_field"
             tools:text="@string/msg_introduce_la_co" />
 
-        <View
+        <EditText
             android:id="@+id/contra_recover"
             android:layout_width="330dp"
-            android:layout_height="40dp"
+            android:layout_height="48dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="15dp"
             android:background="@drawable/rectangle_bg_bluegray_100_radius_20"
             app:layout_constraintStart_toStartOf="@+id/contra"
-            app:layout_constraintTop_toBottomOf="@+id/contra" />
+            app:layout_constraintTop_toBottomOf="@+id/contra"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <TextView
             android:id="@+id/repeat_contra"
@@ -70,15 +72,16 @@
             app:layout_constraintTop_toBottomOf="@+id/contra_recover"
             tools:text="@string/msg_repite_la_nueva" />
 
-        <android.inputmethodservice.ExtractEditText
+        <EditText
             android:id="@+id/introduce_field"
             android:layout_width="330dp"
-            android:layout_height="40dp"
+            android:layout_height="48dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="15dp"
             android:background="@drawable/rectangle_bg_bluegray_100_radius_20"
             app:layout_constraintStart_toStartOf="@+id/introduce_cod"
-            app:layout_constraintTop_toBottomOf="@+id/introduce_cod" />
+            app:layout_constraintTop_toBottomOf="@+id/introduce_cod"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <TextView
             android:id="@+id/modAceptar"
