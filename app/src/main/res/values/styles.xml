@@ -224,4 +224,8 @@
         <item name="android:textColorPrimary">@color/black_900_7e</item>
         <item name="android:textColorHint">@color/black_900_7e</item>
     </style>
+    <style name="MyDrawerArrowToggleStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="android:textAppearance">@style/txtRamabhadra20</item>
+    </style>
+
 </resources>

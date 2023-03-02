@@ -2,6 +2,7 @@ package com.example.fuelonroad;
 
 import android.os.Bundle;
 
+import androidx.activity.OnBackPressedCallback;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
@@ -31,6 +32,7 @@ public class VehiculosFragment extends Fragment {
     private TextView v6;
 
     private NavController navController;
+    MainActivity activity = (MainActivity) getActivity();
 
     public VehiculosFragment() {
         // Required empty public constructor
@@ -39,6 +41,15 @@ public class VehiculosFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        OnBackPressedCallback callback = new OnBackPressedCallback(true /* enabled by default */) {
+            @Override
+            public void handleOnBackPressed() {
+                // Handle the back button even
+                activity.lockDrawer();
+            }
+        };
+
+        requireActivity().getOnBackPressedDispatcher().addCallback(this, callback);
     }
 
     @Override
@@ -50,6 +61,7 @@ public class VehiculosFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        activity.unlockDrawer();
         navController = Navigation.findNavController(view);
         v1 = view.findViewById(R.id.txtMat);
         v2 = view.findViewById(R.id.txtMatri);
@@ -85,52 +97,53 @@ public class VehiculosFragment extends Fragment {
         plus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.modificarVehiculoFragment);
+                navController.navigate(R.id.action_vehiculosFragment_to_addVehiculoFragment);
             }
         });
         add = view.findViewById(R.id.txtAadirvehculo);
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.modificarVehiculoFragment);
+                navController.navigate(R.id.action_vehiculosFragment_to_addVehiculoFragment);
             }
         });
         v1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.modificarVehiculoFragment);
+                navController.navigate(R.id.action_vehiculosFragment_to_vehiculosModFragment);
             }
         });
         v2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.modificarVehiculoFragment);
+                navController.navigate(R.id.action_vehiculosFragment_to_vehiculosModFragment);
             }
         });
         v3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.modificarVehiculoFragment);
+                navController.navigate(R.id.action_vehiculosFragment_to_vehiculosModFragment);
             }
         });
         v4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.modificarVehiculoFragment);
+                navController.navigate(R.id.action_vehiculosFragment_to_vehiculosModFragment);
             }
         });
         v5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.modificarVehiculoFragment);
+                navController.navigate(R.id.action_vehiculosFragment_to_vehiculosModFragment);
             }
         });
         v6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.modificarVehiculoFragment);
+                navController.navigate(R.id.action_vehiculosFragment_to_vehiculosModFragment);
             }
         });
+
 
     }
 }

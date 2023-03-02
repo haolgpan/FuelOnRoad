@@ -42,7 +42,8 @@ dependencies {
     implementation 'androidx.navigation:navigation-ui:2.5.3'
     //FlexLayout
     implementation 'com.google.android.flexbox:flexbox:3.0.0'
-    //Splash
+    //
+
 
     //
     implementation 'com.google.android.gms:play-services-maps:18.1.0'
@@ -59,7 +60,8 @@ dependencies {
     implementation 'org.osmdroid:osmdroid-mapsforge:6.1.8'
     implementation 'androidx.preference:preference:1.1.1'
 
-    //swipe drawer
+    //Transition
+    implementation 'com.github.AtifSayings:Animatoo:1.0.1'
 
 
 }

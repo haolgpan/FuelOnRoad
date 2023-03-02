@@ -9,7 +9,11 @@
         android:id="@+id/loggingInFragment"
         android:name="com.example.fuelonroad.LoggingInFragment"
         android:label="fragment_logging_in"
-        tools:layout="@layout/fragment_logging_in" />
+        tools:layout="@layout/fragment_logging_in" >
+        <action
+            android:id="@+id/action_loggingInFragment_to_vehiculosFragment"
+            app:destination="@id/vehiculosFragment" />
+    </fragment>
     <fragment
         android:id="@+id/signInFragment"
         android:name="com.example.fuelonroad.SignUpFragment"
@@ -24,7 +28,13 @@
         android:id="@+id/recover2Fragment"
         android:name="com.example.fuelonroad.Recover2Fragment"
         android:label="fragment_recover2"
-        tools:layout="@layout/fragment_recover2" />
+        tools:layout="@layout/fragment_recover2" >
+        <action
+            android:id="@+id/action_recover2Fragment_to_recover3Fragment"
+            app:destination="@id/recover3Fragment"
+            app:enterAnim="@anim/animate_split_enter"
+            app:exitAnim="@anim/animate_fade_exit" />
+    </fragment>
     <fragment
         android:id="@+id/actualizarPerfilFragment"
         android:name="com.example.fuelonroad.ActualizarPerfilFragment"
@@ -37,7 +47,9 @@
         tools:layout="@layout/fragment_recover3" >
         <action
             android:id="@+id/action_recover3Fragment_to_contentMainFragment"
-            app:destination="@id/contentMainFragment" />
+            app:destination="@id/contentMainFragment"
+            app:enterAnim="@anim/animate_card_enter"
+            app:exitAnim="@anim/animate_card_exit" />
     </fragment>
     <fragment
         android:id="@+id/mapsFragment"
@@ -48,12 +60,11 @@
         android:id="@+id/addVehiculoFragment"
         android:name="com.example.fuelonroad.AddVehiculoFragment"
         android:label="fragment_add_vehiculo"
-        tools:layout="@layout/fragment_add_vehiculo" />
-    <fragment
-        android:id="@+id/modificarVehiculoFragment"
-        android:name="com.example.fuelonroad.AddVehiculoFragment"
-        android:label="fragment_modificar_vehiculo"
-        tools:layout="@layout/fragment_add_vehiculo" />
+        tools:layout="@layout/fragment_add_vehiculo" >
+        <action
+            android:id="@+id/action_addVehiculoFragment_to_vehiculosFragment"
+            app:destination="@id/vehiculosFragment" />
+    </fragment>
     <fragment
         android:id="@+id/chatFragment"
         android:name="com.example.fuelonroad.ChatFragment"
@@ -68,17 +79,43 @@
         android:id="@+id/vehiculosFragment"
         android:name="com.example.fuelonroad.VehiculosFragment"
         android:label="fragment_vehiculos"
-        tools:layout="@layout/fragment_vehiculos" />
+        tools:layout="@layout/fragment_vehiculos" >
+        <action
+            android:id="@+id/action_vehiculosFragment_to_addVehiculoFragment"
+            app:destination="@id/addVehiculoFragment"
+            app:enterAnim="@anim/animate_spin_enter"
+            app:exitAnim="@anim/animate_spin_exit" />
+        <action
+            android:id="@+id/action_vehiculosFragment_to_vehiculosModFragment"
+            app:destination="@id/vehiculosModFragment"
+            app:enterAnim="@anim/animate_swipe_left_enter"
+            app:exitAnim="@anim/animate_swipe_left_exit" />
+    </fragment>
     <fragment
         android:id="@+id/contentMainFragment"
         android:name="com.example.fuelonroad.ContentMainFragment"
         android:label="fragment_content_main"
-        tools:layout="@layout/fragment_content_main" />
+        tools:layout="@layout/fragment_content_main" >
+        <action
+            android:id="@+id/action_contentMainFragment_to_loggingInFragment"
+            app:destination="@id/loggingInFragment"
+            app:enterAnim="@anim/animate_diagonal_right_enter"
+            app:exitAnim="@anim/animate_diagonal_right_exit" />
+        <action
+            android:id="@+id/action_contentMainFragment_to_signInFragment"
+            app:destination="@id/signInFragment"
+            app:enterAnim="@anim/animate_shrink_enter"
+            app:exitAnim="@anim/animate_shrink_exit" />
+    </fragment>
     <fragment
         android:id="@+id/vehiculosModFragment"
         android:name="com.example.fuelonroad.VehiculosModFragment"
         android:label="fragment_vehiculos_mod"
-        tools:layout="@layout/fragment_vehiculos_mod" />
+        tools:layout="@layout/fragment_vehiculos_mod" >
+        <action
+            android:id="@+id/action_vehiculosModFragment_to_vehiculosFragment"
+            app:destination="@id/vehiculosFragment" />
+    </fragment>
     <fragment
         android:id="@+id/chatTextFragment"
         android:name="com.example.fuelonroad.ChatTextFragment"

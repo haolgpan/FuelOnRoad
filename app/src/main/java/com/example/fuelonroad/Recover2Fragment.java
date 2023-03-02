@@ -11,6 +11,7 @@ import androidx.navigation.Navigation;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 /**
@@ -22,7 +23,7 @@ public class Recover2Fragment extends Fragment {
 
     TextView aceptar;
     TextView cancelar;
-    TextView back;
+    ImageView back;
     NavController navController;
 
     public Recover2Fragment() {
@@ -46,6 +47,7 @@ public class Recover2Fragment extends Fragment {
         navController = Navigation.findNavController(view);
         aceptar = view.findViewById(R.id.modAceptar);
         cancelar = view.findViewById(R.id.buttonCancelar);
+        back = view.findViewById(R.id.imagePolygonOne);
 
         aceptar.setOnClickListener(new View.OnClickListener() {
             @Override
