@@ -45,6 +45,7 @@ public class MapsFragment extends Fragment {
     private ImageView social;
     private ImageView inci;
     private ImageView car;
+    private ImageView emer;
 
     private NavController navController;
     private MapController mapController;
@@ -112,6 +113,20 @@ public class MapsFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 navController.navigate(R.id.incidenciasFragment);
+            }
+        });
+        repo = view.findViewById(R.id.imageGasdarkblueOne);
+        repo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.mapRepoFragment);
+            }
+        });
+        emer = view.findViewById(R.id.imageWarning);
+        emer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.mapEmergencyFragment2);
             }
         });
     }

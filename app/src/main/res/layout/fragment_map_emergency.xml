@@ -48,7 +48,7 @@
             app:layout_constraintStart_toEndOf="@+id/imageGasdarkblueOne"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="ContentDescription"
-            tools:src="@drawable/img_settings" />
+            app:srcCompat="@drawable/img_settings" />
 
         <ImageView
             android:id="@+id/imageMap"
@@ -63,7 +63,7 @@
             app:layout_constraintStart_toEndOf="@+id/imageSettings"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="ContentDescription"
-            tools:src="@drawable/img_map" />
+            app:srcCompat="@drawable/img_map" />
 
         <ImageView
             android:id="@+id/imageGasdarkblueOne"
@@ -80,7 +80,7 @@
             app:layout_constraintStart_toEndOf="@+id/imageMap"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="ContentDescription"
-            tools:src="@drawable/img_gasdarkblue2" />
+            app:srcCompat="@drawable/img_gasdarkblue2" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/viewRectangle925"
@@ -110,7 +110,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="ContentDescription"
-                tools:src="@drawable/img_warning" />
+                app:srcCompat="@drawable/img_warning" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

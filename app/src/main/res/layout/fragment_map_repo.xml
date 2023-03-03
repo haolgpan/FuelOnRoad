@@ -51,7 +51,7 @@
             app:layout_constraintStart_toEndOf="@+id/imageNdiceOne"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="ContentDescription"
-            tools:src="@drawable/img_warning" />
+            app:srcCompat="@drawable/img_warning" />
 
         <ImageView
             android:id="@+id/imageNdiceOne"
@@ -65,7 +65,7 @@
             app:layout_constraintStart_toEndOf="@+id/viewRectangle925"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="ContentDescription"
-            tools:src="@drawable/img_settings" />
+            app:srcCompat="@drawable/img_settings" />
 
         <ImageView
             android:id="@+id/imageMap"

@@ -227,5 +227,17 @@
     <style name="MyDrawerArrowToggleStyle" parent="Widget.AppCompat.DrawerArrowToggle">
         <item name="android:textAppearance">@style/txtRamabhadra20</item>
     </style>
+    <style name="Custom" parent="android:Theme.DeviceDefault.Dialog">
+        <item name="DialogTitleAppearance">@android:style/TextAppearance.Medium</item>
+        <item name="DialogTitleText">Updating…</item>
+        <item name="DialogSpotColor">@color/bluegray_900</item>
+        <item name="DialogSpotCount">4</item>
+    </style>
+    <style name="Custom2" parent="android:Theme.DeviceDefault.Dialog">
+        <item name="DialogTitleAppearance">@android:style/TextAppearance.Medium</item>
+        <item name="DialogTitleText">Updating…</item>
+        <item name="DialogSpotColor">#E91E1E</item>
+        <item name="DialogSpotCount">4</item>
+    </style>
 
 </resources>
