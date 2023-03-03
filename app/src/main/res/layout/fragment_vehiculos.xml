@@ -250,7 +250,7 @@
                                     style="@style/txtRamabhadra20"
                                     android:layout_width="250dp"
                                     android:layout_height="75dp"
-                                    android:text="Matrícula: 9887TYT\u000A Tipo de repostaje: Híbrido"
+                                    android:text="Matrícula: 9887TYT\u000ATipo de repostaje: Híbrido"
                                     app:layout_constraintBottom_toBottomOf="parent"
                                     app:layout_constraintEnd_toEndOf="parent"
                                     app:layout_constraintTop_toTopOf="parent" />
@@ -292,7 +292,7 @@
                                     style="@style/txtRamabhadra20"
                                     android:layout_width="250dp"
                                     android:layout_height="75dp"
-                                    android:text="Matrícula: 9876MJH\u000A Tipo de repostaje: Híbrido"
+                                    android:text="Matrícula: 9876MJH\u000ATipo de repostaje: Híbrido"
                                     app:layout_constraintBottom_toBottomOf="parent"
                                     app:layout_constraintEnd_toEndOf="parent"
                                     app:layout_constraintTop_toTopOf="parent" />
@@ -327,7 +327,7 @@
                                 android:layout_width="250dp"
                                 android:layout_height="75dp"
                                 android:layout_weight="0.74"
-                                android:text="@string/msg_matr_cula_9898"
+                                android:text="Matrícula: 9898QWE\u000ATipo de repostaje: Gasolina"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintTop_toTopOf="parent" />

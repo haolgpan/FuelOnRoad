@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -22,7 +21,6 @@
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
@@ -39,30 +37,15 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
-            android:id="@+id/imageWarning"
-            android:layout_width="@dimen/_45pxh"
-            android:layout_height="34dp"
-            android:layout_marginHorizontal="15dp"
-            android:scaleType="fitXY"
-            android:src="@drawable/img_warning"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/imageNdiceOne"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="ContentDescription"
-            tools:src="@drawable/img_warning" />
-
-        <ImageView
             android:id="@+id/imageNdiceOne"
             android:layout_width="31dp"
             android:layout_height="30dp"
             android:layout_marginHorizontal="15dp"
             android:scaleType="fitXY"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/imageWarning"
+            app:layout_constraintEnd_toStartOf="@+id/viewRectangle925"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/viewRectangle925"
+            app:layout_constraintStart_toEndOf="@+id/imageGasdarkblueOne"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="ContentDescription"
             tools:src="@drawable/img_settings" />
@@ -75,42 +58,59 @@
             android:scaleType="fitXY"
             android:src="@drawable/img_map"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/viewRectangle925"
+            app:layout_constraintEnd_toStartOf="@+id/imageGasdarkblueOne"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/imageSettings"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="ContentDescription"
             tools:src="@drawable/img_map" />
 
+        <ImageView
+            android:id="@+id/imageGasdarkblueOne"
+            android:layout_width="@dimen/_28pxh"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_gasdarkblue2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageNdiceOne"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imageMap"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/img_gasdarkblue2" />
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/viewRectangle925"
             android:layout_width="50dp"
             android:layout_height="0dp"
             android:layout_gravity="center"
-            android:layout_marginTop="4dp"
-            android:layout_marginBottom="4dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
             android:background="@drawable/rectangle_bg_bluegray_900_radius_15"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/imageNdiceOne"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/imageMap"
+            app:layout_constraintStart_toEndOf="@+id/imageNdiceOne"
             app:layout_constraintTop_toTopOf="parent">
 
             <ImageView
-                android:id="@+id/imageGasdarkblueOne"
-                android:layout_width="@dimen/_28pxh"
-                android:layout_height="0dp"
+                android:id="@+id/imageWarning"
+                android:layout_width="29dp"
+                android:layout_height="39dp"
                 android:layout_marginHorizontal="15dp"
-                android:layout_marginTop="4dp"
-                android:layout_marginBottom="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/img_gasdarkblue2"
+                android:src="@drawable/img_warning"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="ContentDescription"
-                tools:src="@drawable/img_gasdarkblue2" />
+                tools:src="@drawable/img_warning" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

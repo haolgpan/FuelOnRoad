@@ -3,6 +3,7 @@ package com.example.fuelonroad;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
 import android.os.Handler;
@@ -17,7 +18,7 @@ import android.view.ViewGroup;
  */
 public class Recover3Fragment extends Fragment {
 
-
+    private NavController navController = Navigation.findNavController(getView());
     public Recover3Fragment() {
         // Required empty public constructor
     }
@@ -43,7 +44,7 @@ public class Recover3Fragment extends Fragment {
             @Override
             public void run() {
                 // Navigate to the other fragment
-                Navigation.findNavController(view).navigate(R.id.loggingInFragment);
+                Navigation.findNavController(requireView()).navigate(R.id.loggingInFragment);
             }
         };
 
@@ -51,6 +52,6 @@ public class Recover3Fragment extends Fragment {
         handler.postDelayed(runnable, 2000);
 
         return view;
-
     }
+
 }

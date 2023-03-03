@@ -10,16 +10,17 @@ import android.view.ViewGroup;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link MapRepoFragment#} factory method to
+ * Use the {@link MapEmergencyFragment#} factory method to
  * create an instance of this fragment.
  */
-public class MapRepoFragment extends Fragment {
+public class MapEmergencyFragment extends Fragment {
 
 
 
-    public MapRepoFragment() {
+    public MapEmergencyFragment() {
         // Required empty public constructor
     }
+
 
 
     @Override
@@ -32,6 +33,6 @@ public class MapRepoFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_map_repo, container, false);
+        return inflater.inflate(R.layout.fragment_map_emergency, container, false);
     }
 }
