@@ -9,7 +9,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         style="@style/groupStylebluegray_900"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         tools:context=".ChatFragment">
 
         <TextView
@@ -29,7 +29,7 @@
             app:layout_constraintTop_toTopOf="parent"
             tools:text="@string/msg_mis_conversacio" />
 
-        <TextView
+        <EditText
             android:id="@+id/txtSearch"
             style="@style/groupStylegray_700cornerRadius"
             android:layout_width="257dp"
@@ -86,13 +86,13 @@
             android:layout_gravity="end"
             android:background="@drawable/rectangle_bg_gray_700_radius_10"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/img_subtract"
             app:layout_constraintBottom_toBottomOf="@+id/txtSearch"
             app:layout_constraintEnd_toEndOf="@+id/txtSearch"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="@+id/txtSearch"
             app:layout_constraintTop_toTopOf="@+id/txtSearch"
-            tools:ignore="ContentDescription" />
+            app:srcCompat="@drawable/img_subtract"
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
 
         <TextView
             android:id="@+id/txtChatrooms"
@@ -123,6 +123,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtChatrooms"
+            tools:ignore="TextSizeCheck"
             tools:text="@string/lbl_08_43" />
 
         <ImageView
@@ -152,6 +153,7 @@
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtHereisanother"
+            tools:ignore="TextSizeCheck"
             tools:text="@string/lbl_18_mar" />
 
         <TextView
@@ -168,6 +170,7 @@
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtTue"
+            tools:ignore="TextSizeCheck"
             tools:text="@string/msg_odeusz_piotrows" />
 
         <TextView
@@ -184,6 +187,7 @@
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtMarCounter"
+            tools:ignore="TextSizeCheck"
             tools:text="@string/lbl_maciej_or_owski" />
 
         <ImageView
@@ -214,6 +218,7 @@
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageGroup"
+            tools:ignore="TextSizeCheck"
             tools:text="@string/msg_will_do_super" />
 
         <ImageView
@@ -256,7 +261,7 @@
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageImage"
-            tools:text="@string/msg_maciej_kowalski" />
+            tools:ignore="TextSizeCheck"/>
 
         <TextView
             android:id="@+id/txtBoenkaMalina"
@@ -272,6 +277,7 @@
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtSun"
+            tools:ignore="TextSizeCheck"
             tools:text="@string/lbl_bo_enka_malina" />
 
         <TextView
@@ -288,6 +294,7 @@
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtWilldosuper"
+            tools:ignore="TextSizeCheck"
             tools:text="@string/lbl_sun" />
 
         <TextView
@@ -304,6 +311,7 @@
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtEmail"
+            tools:ignore="TextSizeCheck"
             tools:text="@string/lbl_tue" />
 
         <ImageView
@@ -333,6 +341,7 @@
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtUploadedfile"
+            tools:ignore="TextSizeCheck"
             tools:text="@string/lbl_23_mar" />
 
         <TextView
@@ -349,6 +358,7 @@
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageImageThree"
+            tools:ignore="TextSizeCheck"
             tools:text="@string/lbl_uploaded_file" />
 
         <ImageView
@@ -378,6 +388,7 @@
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageImageFour"
+            tools:ignore="TextSizeCheck"
             tools:text="@string/msg_here_is_another" />
 
         <TextView
@@ -394,6 +405,7 @@
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtMarCounterOne"
+            tools:ignore="TextSizeCheck"
             tools:text="@string/lbl_krysia_eurydyka" />
 
         <TextView
@@ -411,6 +423,7 @@
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtTime"
+            tools:ignore="TextSizeCheck"
             tools:text="@string/lbl_maciej_kowalski" />
 
         <androidx.constraintlayout.widget.ConstraintLayout

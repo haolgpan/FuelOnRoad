@@ -1,5 +1,6 @@
 package com.example.fuelonroad;
 
+import android.graphics.Paint;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -42,6 +43,7 @@ public class ContentMainFragment extends Fragment {
         login = view.findViewById(R.id.buttonLogin);
         registro = view.findViewById(R.id.buttonRegistro);
         recover = view.findViewById(R.id.txtRecordarcontra);
+        recover.setPaintFlags(recover.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
