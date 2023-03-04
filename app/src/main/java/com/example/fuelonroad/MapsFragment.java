@@ -43,7 +43,6 @@ public class MapsFragment extends Fragment {
     private MapView mapView;
     private ImageView repo;
     private ImageView social;
-    private ImageView inci;
     private ImageView car;
     private ImageView emer;
 
@@ -91,6 +90,8 @@ public class MapsFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        MainActivity activity = (MainActivity) getActivity();
+        activity.unlockDrawer();
         navController = Navigation.findNavController(view);
 
         car = view.findViewById(R.id.imageSettings);
@@ -106,13 +107,6 @@ public class MapsFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 navController.navigate(R.id.chatFragment);
-            }
-        });
-        inci = view.findViewById(R.id.imageWarning);
-        inci.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                navController.navigate(R.id.incidenciasFragment);
             }
         });
         repo = view.findViewById(R.id.imageGasdarkblueOne);

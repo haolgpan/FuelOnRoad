@@ -22,12 +22,11 @@
             android:ellipsize="end"
             android:letterSpacing="0.05"
             android:singleLine="true"
-            android:text="@string/msg_mis_conversacio"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.071"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="@string/msg_mis_conversacio" />
+            tools:text="@string/lbl_mis_incidencias" />
 
         <TextView
             android:id="@+id/txtSearch"
@@ -187,7 +186,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtBoenkaMalina"
             tools:ignore="ContentDescription"
-            tools:src="@drawable/img_image_1" />
+            app:srcCompat="@drawable/img_image_1" />
 
         <TextView
             android:id="@+id/txtWilldosuper"
@@ -213,13 +212,11 @@
             android:layout_height="@dimen/_15pxh"
             android:layout_gravity="center_horizontal"
             android:scaleType="fitXY"
-            android:src="@drawable/img_favorite"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageImageOne"
-            tools:ignore="ContentDescription"
-            tools:src="@drawable/img_favorite" />
+            app:srcCompat="@drawable/img_favorite" />
 
         <ImageView
             android:id="@+id/imageImageFour"
@@ -232,7 +229,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtMaciejOrowski"
             tools:ignore="ContentDescription"
-            tools:src="@drawable/img_image_2" />
+            app:srcCompat="@drawable/img_image_2" />
 
         <TextView
             android:id="@+id/txtEmail"
@@ -313,7 +310,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtMaciejKowalski"
             tools:ignore="ContentDescription"
-            tools:src="@drawable/img_image" />
+            app:srcCompat="@drawable/img_image" />
 
         <TextView
             android:id="@+id/txtMarCounter"
@@ -355,13 +352,12 @@
             android:layout_height="@dimen/_15pxh"
             android:layout_gravity="center_horizontal"
             android:scaleType="fitXY"
-            android:src="@drawable/img_group"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageFavorite"
             tools:ignore="ContentDescription"
-            tools:src="@drawable/img_group" />
+            app:srcCompat="@drawable/img_group" />
 
         <TextView
             android:id="@+id/txtHereisanother"
@@ -436,14 +432,13 @@
                 android:layout_height="34dp"
                 android:layout_marginHorizontal="15dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/img_map"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/imageGasdarkblueOne"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toEndOf="@+id/imageSettings"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="ContentDescription"
-                tools:src="@drawable/img_map" />
+                app:srcCompat="@drawable/img_map" />
 
             <ImageView
                 android:id="@+id/imageGasdarkblueOne"

@@ -5,25 +5,17 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/profileFragment"
-            android:title="Mi perfil >"
+            android:title="@string/mi_perfil"
             android:icon="@drawable/profile"
-            android:fontFamily="@font/ramabhadra"
-            android:textColor="@color/lime_600"
-            android:textSize="90sp"/>
+            android:titleTextAppearance="@style/MyMenuItemStyle" />
         <item
             android:id="@+id/vehicleFragment"
             android:title="Mis vehículos >"
-            android:icon="@drawable/drawercoche"
-            android:fontFamily="@font/ramabhadra"
-            android:textColor="@color/lime_600"
-            android:textSize="16sp"/>
+            android:icon="@drawable/drawercoche" />
         <item
             android:id="@+id/inciFragment"
             android:title="Mis incidencias >"
-            android:icon="@drawable/warning_outline"
-            android:fontFamily="@font/ramabhadra"
-            android:textColor="@color/lime_600"
-            android:textSize="16sp"/>
+            android:icon="@drawable/warning_outline"/>
         <item
             android:id="@+id/routeFragment"
             android:title="Mis rutas >"

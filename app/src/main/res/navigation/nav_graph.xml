@@ -192,4 +192,9 @@
         android:name="com.example.fuelonroad.MapEmergencyFragment"
         android:label="fragment_map_emergency"
         tools:layout="@layout/fragment_map_emergency" />
+    <fragment
+        android:id="@+id/mapRouteFragment"
+        android:name="com.example.fuelonroad.MapRouteFragment"
+        android:label="fragment_map_route"
+        tools:layout="@layout/fragment_map_route" />
 </navigation>

@@ -43,9 +43,9 @@ public class ActualizarPerfilFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         navController = Navigation.findNavController(view);
+        MainActivity activity = (MainActivity) getActivity();
+        activity.unlockDrawer();
         actualizar = view.findViewById(R.id.txtActualizarperf);
-
-
         actualizar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

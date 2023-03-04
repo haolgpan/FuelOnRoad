@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
                                 break;
                             case R.id.routeFragment:
                                 navController = Navigation.findNavController(MainActivity.this, R.id.nav_host_fragment);
-                                navController.navigate(R.id.mapView);
+                                navController.navigate(R.id.mapRouteFragment);
                                 break;
                         }
                         // Set the item as checked to highlight it
@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
                         return true;
                     }
                 });
-        navigationView.getMenu().findItem(R.id.profileFragment).setChecked(true);
+        navigationView.getMenu().findItem(R.id.vehicleFragment).setChecked(true);
     }
     @Override
     public boolean onSupportNavigateUp() {

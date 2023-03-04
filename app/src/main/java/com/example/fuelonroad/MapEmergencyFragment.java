@@ -35,7 +35,7 @@ public class MapEmergencyFragment extends Fragment {
     private MapView mapView;
     private ImageView repo;
     private ImageView social;
-    private ImageView inci;
+    private ImageView map;
     private ImageView car;
 
     private NavController navController;
@@ -151,11 +151,12 @@ public class MapEmergencyFragment extends Fragment {
     public void onDestroyView() {
         super.onDestroyView();
         mapView.onDetach();
-        navController.navigate(R.id.mapsFragment);
     }
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        MainActivity activity = (MainActivity) getActivity();
+        activity.unlockDrawer();
         navController = Navigation.findNavController(view);
 
         car = view.findViewById(R.id.imageSettings);
@@ -173,11 +174,18 @@ public class MapEmergencyFragment extends Fragment {
                 navController.navigate(R.id.chatFragment);
             }
         });
-        inci = view.findViewById(R.id.imageWarning);
-        inci.setOnClickListener(new View.OnClickListener() {
+        map = view.findViewById(R.id.imageMap);
+        map.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.incidenciasFragment);
+                navController.navigate(R.id.mapsFragment);
+            }
+        });
+        repo = view.findViewById(R.id.imageGasdarkblueOne);
+        repo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.mapRepoFragment);
             }
         });
     }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <resources>
-    <string name="app_name">hao_long_s_application1</string>
+    <string name="app_name">Fuel on Road</string>
     <string name="loading">Loading…</string>
     <string name="no_internet_connection">No internet connection!</string>
     <string name="msg_introduce_la_co">Introduce la contraseña</string>
@@ -43,7 +43,7 @@ Tipo de repostaje: Diesel</string>
     <string name="lbl_maciej_or_owski">Maciej Orłowski</string>
     <string name="msg_mis_conversacio">Mis conversaciones</string>
     <string name="lbl_08_43">08:43</string>
-    <string name="lbl_search">Search...</string>
+    <string name="lbl_search">Search…</string>
     <string name="lbl_chatrooms">Chatrooms</string>
     <string name="msg_repite_la_nueva">Repite la nueva contraseña.</string>
     <string name="msg_nombre_de_usuar">Nombre de usuario</string>
@@ -74,7 +74,7 @@ Tipo de repostaje: Híbrido</string>
     <string name="lbl_pan">Pan</string>
     <string name="lbl_buscar_veh_culo">Buscar vehículo</string>
     <string name="msg_introduce_una_c">Introduce una contraseña.</string>
-    <string name="msg_here_is_another">Here is another tutorial, if you...</string>
+    <string name="msg_here_is_another">Here is another tutorial, if you…</string>
     <string name="lbl_mis_veh_culos">Mis vehículos</string>
     <string name="msg_matr_cula_9898">Matrícula: 9898QWE
 Tipo de repostaje: Gasolina</string>
@@ -84,4 +84,5 @@ Tipo de repostaje: Gasolina</string>
     <string name="lbl_maciej_kowalski">Maciej Kowalski</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="mi_perfil"><![CDATA[Mi perfil >]]></string>
 </resources>

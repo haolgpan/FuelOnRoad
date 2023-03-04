@@ -45,6 +45,7 @@
             android:textSize="25dp"
             app:layout_constraintStart_toStartOf="@+id/txtMisconversacio"
             app:layout_constraintTop_toBottomOf="@+id/txtMisconversacio"
+            tools:ignore="TouchTargetSizeCheck"
             tools:targetApi="p"
             tools:text="@string/lbl_search" />
 
@@ -92,7 +93,7 @@
             app:layout_constraintStart_toStartOf="@+id/txtSearch"
             app:layout_constraintTop_toTopOf="@+id/txtSearch"
             app:srcCompat="@drawable/img_subtract"
-            tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <TextView
             android:id="@+id/txtChatrooms"

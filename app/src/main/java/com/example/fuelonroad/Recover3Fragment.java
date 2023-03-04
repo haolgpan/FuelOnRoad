@@ -2,6 +2,8 @@ package com.example.fuelonroad;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -18,11 +20,11 @@ import android.view.ViewGroup;
  */
 public class Recover3Fragment extends Fragment {
 
-    private NavController navController = Navigation.findNavController(getView());
+    private NavController navController;
+
     public Recover3Fragment() {
         // Required empty public constructor
     }
-
 
 
     @Override
@@ -34,24 +36,22 @@ public class Recover3Fragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_recover3, container, false);
+        return inflater.inflate(R.layout.fragment_recover3, container, false);
+    }
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        // Initialize NavController
+        navController = Navigation.findNavController(view);
 
-        // Create a Handler object
-        Handler handler = new Handler();
-
-        // Define a Runnable that performs the navigation
-        Runnable runnable = new Runnable() {
+        // Delay navigation by 4 seconds
+        new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                // Navigate to the other fragment
-                Navigation.findNavController(requireView()).navigate(R.id.loggingInFragment);
+                // Navigate to another Fragment using NavController
+                navController.navigate(R.id.loggingInFragment);
             }
-        };
-
-        // Post the runnable with a 3 second delay
-        handler.postDelayed(runnable, 2000);
-
-        return view;
+        }, 3000);
     }
 
 }

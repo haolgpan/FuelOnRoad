@@ -21,7 +21,7 @@ public class VehiculosFragment extends Fragment {
     private ImageView map;
     private ImageView repo;
     private ImageView social;
-    private ImageView inci;
+    private ImageView emer;
     private ImageView plus;
     private TextView add;
     private TextView v1;
@@ -68,7 +68,13 @@ public class VehiculosFragment extends Fragment {
                 navController.navigate(R.id.mapsFragment);
             }
         });
-        //repo
+        repo = view.findViewById(R.id.imageGasdarkblueOne);
+        repo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.mapRepoFragment);
+            }
+        });
 
         social = view.findViewById(R.id.imageSettings);
         social.setOnClickListener(new View.OnClickListener() {
@@ -77,11 +83,11 @@ public class VehiculosFragment extends Fragment {
                 navController.navigate(R.id.chatFragment);
             }
         });
-        inci = view.findViewById(R.id.imageWarning);
-        inci.setOnClickListener(new View.OnClickListener() {
+        emer = view.findViewById(R.id.imageWarning);
+        emer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.incidenciasFragment);
+                navController.navigate(R.id.mapEmergencyFragment2);
             }
         });
         plus = view.findViewById(R.id.imageEditpluscir);

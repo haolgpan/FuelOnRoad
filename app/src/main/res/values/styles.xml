@@ -239,5 +239,8 @@
         <item name="DialogSpotColor">#E91E1E</item>
         <item name="DialogSpotCount">4</item>
     </style>
+    <style name="MyMenuItemStyle" parent="@android:style/TextAppearance.Widget.IconMenu.Item">
+        <item name="android:textColorPrimary">@color/lime_600</item> <!-- Change this to your desired color -->
+    </style>
 
 </resources>

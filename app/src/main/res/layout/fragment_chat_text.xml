@@ -33,6 +33,7 @@
                         android:layout_height="@dimen/_44pxh"
                         android:layout_width="@dimen/_44pxh"
                         android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/img_image"
                         tools:ignore="ContentDescription" tools:src="@drawable/img_image"/>
 
                     <TextView
@@ -289,12 +290,15 @@
                         <FrameLayout android:id="@+id/frameStackrectangle"
                             android:layout_height="@dimen/_39pxv"
                             android:layout_width="@dimen/_312pxh">
+
                             <EditText
-                                android:background="@drawable/rectangle_bg_black_900_3f_radius_10"
                                 android:id="@+id/viewRectangle"
-                                android:layout_gravity="center"
+                                android:layout_width="@dimen/_312pxh"
                                 android:layout_height="@dimen/_39pxv"
-                                android:layout_marginEnd="@dimen/_1pxh" android:layout_width="@dimen/_312pxh"/>
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="@dimen/_1pxh"
+                                android:background="@drawable/rectangle_bg_black_900_3f_radius_10"
+                                tools:ignore="SpeakableTextPresentCheck" />
                             <FrameLayout
                                 android:id="@+id/frameStacklightbulb"
                                 android:layout_gravity="end"
@@ -310,7 +314,7 @@
                                     android:layout_marginTop="@dimen/_10pxv"
                                     android:layout_width="@dimen/_18pxh"
                                     android:scaleType="fitXY"
-                                    android:src="@drawable/img_lightbulb_17x18"
+                                    app:srcCompat="@drawable/img_lightbulb_17x18"
                                     tools:ignore="ContentDescription" tools:src="@drawable/img_lightbulb_17x18"/>
                             </FrameLayout>
                         </FrameLayout>
@@ -327,7 +331,7 @@
                                 android:layout_marginTop="@dimen/_11pxv"
                                 android:layout_width="@dimen/_20pxh"
                                 android:scaleType="fitXY"
-                                android:src="@drawable/img_camera"
+                                app:srcCompat="@drawable/img_camera"
                                 tools:ignore="ContentDescription" tools:src="@drawable/img_camera"/>
                         </FrameLayout>
                     </LinearLayout>
@@ -359,7 +363,7 @@
                             app:layout_constraintStart_toEndOf="@+id/imageSettings"
                             app:layout_constraintTop_toTopOf="parent"
                             tools:ignore="ContentDescription"
-                            tools:src="@drawable/img_map" />
+                            app:srcCompat="@drawable/img_map" />
 
                         <ImageView
                             android:id="@+id/imageGasdarkblueOne"
@@ -376,7 +380,7 @@
                             app:layout_constraintStart_toEndOf="@+id/imageMap"
                             app:layout_constraintTop_toTopOf="parent"
                             tools:ignore="ContentDescription"
-                            tools:src="@drawable/img_gasdarkblue2" />
+                            app:srcCompat="@drawable/img_gasdarkblue2" />
 
                         <ImageView
                             android:id="@+id/imageSettings"
@@ -404,7 +408,7 @@
                             app:layout_constraintStart_toEndOf="@+id/viewRectangle925"
                             app:layout_constraintTop_toTopOf="parent"
                             tools:ignore="ContentDescription"
-                            tools:src="@drawable/img_warning" />
+                            app:srcCompat="@drawable/img_warning" />
 
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:id="@+id/viewRectangle925"
@@ -433,7 +437,7 @@
                                 app:layout_constraintTop_toTopOf="parent"
                                 app:layout_constraintVertical_bias="0.2"
                                 tools:ignore="ContentDescription"
-                                tools:src="@drawable/img_settings" />
+                                app:srcCompat="@drawable/img_settings" />
                         </androidx.constraintlayout.widget.ConstraintLayout>
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
