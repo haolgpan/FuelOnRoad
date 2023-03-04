@@ -48,13 +48,13 @@ public class AddVehiculoFragment extends Fragment {
         aceptar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.vehiculosFragment);
+                navController.navigate(R.id.action_addVehiculoFragment_to_vehiculosFragment);
             }
         });
         cancelar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.vehiculosFragment);
+                navController.navigate(R.id.action_addVehiculoFragment_to_vehiculosFragment);
             }
         });
     }

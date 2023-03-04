@@ -51,14 +51,14 @@ public class Recover2Fragment extends Fragment {
         aceptar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.recover3Fragment);
+                navController.navigate(R.id.action_recover2Fragment_to_recover3Fragment);
             }
         });
 
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.recover1Fragment);
+                navController.navigate(R.id.action_recover2Fragment_to_recover1Fragment);
             }
         });
     }

@@ -1,5 +1,7 @@
 package com.example.fuelonroad;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 
 import androidx.activity.OnBackPressedCallback;
@@ -30,6 +32,7 @@ public class VehiculosFragment extends Fragment {
     private TextView v4;
     private TextView v5;
     private TextView v6;
+    private ImageView help;
 
     private NavController navController;
 
@@ -65,14 +68,14 @@ public class VehiculosFragment extends Fragment {
         map.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.mapsFragment);
+                navController.navigate(R.id.action_vehiculosFragment_to_mapsFragment);
             }
         });
         repo = view.findViewById(R.id.imageGasdarkblueOne);
         repo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.mapRepoFragment);
+                navController.navigate(R.id.action_vehiculosFragment_to_mapRepoFragment);
             }
         });
 
@@ -80,14 +83,14 @@ public class VehiculosFragment extends Fragment {
         social.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.chatFragment);
+                navController.navigate(R.id.action_vehiculosFragment_to_chatFragment);
             }
         });
         emer = view.findViewById(R.id.imageWarning);
         emer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.mapEmergencyFragment2);
+                navController.navigate(R.id.action_vehiculosFragment_to_mapEmergencyFragment2);
             }
         });
         plus = view.findViewById(R.id.imageEditpluscir);
@@ -138,6 +141,23 @@ public class VehiculosFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 navController.navigate(R.id.action_vehiculosFragment_to_vehiculosModFragment);
+            }
+        });
+        help = view.findViewById(R.id.imageTransparentico);
+        help.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                builder.setMessage("Autor: Hao Pan\nPrototipo de una APP: \nhttps://github.com/haolgpan")
+                        .setTitle("Acerca de");
+                builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        // User clicked OK button
+                        dialog.dismiss();
+                    }
+                });
+                AlertDialog dialog = builder.create();
+                dialog.show();
             }
         });
     }

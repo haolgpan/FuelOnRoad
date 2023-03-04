@@ -49,13 +49,13 @@ public class Recover1Fragment extends Fragment {
         aceptar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.recover2Fragment);
+                navController.navigate(R.id.action_recover1Fragment_to_recover2Fragment);
             }
         });
         cancelar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.contentMainFragment);
+                navController.navigate(R.id.action_recover1Fragment_to_contentMainFragment);
             }
         });
     }

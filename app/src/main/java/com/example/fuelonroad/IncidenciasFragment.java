@@ -57,7 +57,7 @@ public class IncidenciasFragment extends Fragment {
         car.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.vehiculosFragment);
+                navController.navigate(R.id.action_chatFragment_to_vehiculosFragment);
             }
         });
 
@@ -93,28 +93,28 @@ public class IncidenciasFragment extends Fragment {
         v1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.incidenciaChatFragment);
+                navController.navigate(R.id.action_incidenciasFragment_to_incidenciaChatFragment);
             }
         });
         v2 = view.findViewById(R.id.imageImageOne);
         v2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.incidenciaChatFragment);
+                navController.navigate(R.id.action_incidenciasFragment_to_incidenciaChatFragment);
             }
         });
         v3 = view.findViewById(R.id.imageImageThree);
         v3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.incidenciaChatFragment);
+                navController.navigate(R.id.action_incidenciasFragment_to_incidenciaChatFragment);
             }
         });
         v4 = view.findViewById(R.id.imageImageFour);
         v4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.incidenciaChatFragment);
+                navController.navigate(R.id.action_incidenciasFragment_to_incidenciaChatFragment);
             }
         });
     }

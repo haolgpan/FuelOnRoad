@@ -49,7 +49,7 @@ public class ActualizarPerfilFragment extends Fragment {
         actualizar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.vehiculosFragment);
+                navController.navigate(R.id.action_actualizarPerfilFragment_to_vehiculosFragment);
             }
         });
 

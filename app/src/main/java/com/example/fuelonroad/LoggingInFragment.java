@@ -49,7 +49,7 @@ public class LoggingInFragment extends Fragment {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.vehiculosFragment);
+                navController.navigate(R.id.action_loggingInFragment_to_vehiculosFragment);
             }
         });
     }

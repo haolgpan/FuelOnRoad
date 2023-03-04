@@ -62,7 +62,7 @@ public class ChatFragment extends Fragment {
         car.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.vehiculosFragment);
+                navController.navigate(R.id.action_chatFragment_to_vehiculosFragment);
             }
         });
 
@@ -70,63 +70,63 @@ public class ChatFragment extends Fragment {
         map.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.mapsFragment);
+                navController.navigate(R.id.action_chatFragment_to_mapsFragment);
             }
         });
         inci = view.findViewById(R.id.imageRemo);
         inci.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.incidenciasFragment);
+                navController.navigate(R.id.action_chatFragment_to_incidenciasFragment);
             }
         });
         repo = view.findViewById(R.id.imageGasdarkblueOne);
         repo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.mapRepoFragment);
+                navController.navigate(R.id.action_chatFragment_to_mapRepoFragment);
             }
         });
         emer = view.findViewById(R.id.imageWarning);
         emer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.mapEmergencyFragment2);
+                navController.navigate(R.id.action_chatFragment_to_mapEmergencyFragment2);
             }
         });
         v1 = view.findViewById(R.id.imageImage);
         v1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.chatTextFragment);
+                navController.navigate(R.id.action_chatFragment_to_chatTextFragment);
             }
         });
         v2 = view.findViewById(R.id.imageImageOne);
         v2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.chatTextFragment);
+                navController.navigate(R.id.action_chatFragment_to_chatTextFragment);
             }
         });
         v3 = view.findViewById(R.id.imageImageThree);
         v3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.chatTextFragment);
+                navController.navigate(R.id.action_chatFragment_to_chatTextFragment);
             }
         });
         v4 = view.findViewById(R.id.imageImageFour);
         v4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.chatTextFragment);
+                navController.navigate(R.id.action_chatFragment_to_chatTextFragment);
             }
         });
         plus = view.findViewById(R.id.btnTwo);
         plus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.chatTextFragment);
+                navController.navigate(R.id.action_chatFragment_to_chatTextFragment);
             }
         });
     }

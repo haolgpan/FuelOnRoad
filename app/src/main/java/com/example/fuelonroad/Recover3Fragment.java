@@ -49,7 +49,7 @@ public class Recover3Fragment extends Fragment {
             @Override
             public void run() {
                 // Navigate to another Fragment using NavController
-                navController.navigate(R.id.loggingInFragment);
+                navController.navigate(R.id.action_recover3Fragment_to_loggingInFragment);
             }
         }, 3000);
     }

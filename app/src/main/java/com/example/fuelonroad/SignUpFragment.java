@@ -50,13 +50,13 @@ public class SignUpFragment extends Fragment {
         aceptar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.loggingInFragment);
+                navController.navigate(R.id.action_signInFragment_to_loggingInFragment);
             }
         });
         cancelar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.contentMainFragment);
+                navController.navigate(R.id.action_signInFragment_to_contentMainFragment);
             }
         });
 

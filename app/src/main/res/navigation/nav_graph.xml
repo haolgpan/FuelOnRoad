@@ -21,7 +21,12 @@
         tools:layout="@layout/fragment_sign_up" >
         <action
             android:id="@+id/action_signInFragment_to_contentMainFragment"
-            app:destination="@id/contentMainFragment" />
+            app:destination="@id/contentMainFragment"
+            app:enterAnim="@anim/animate_fade_enter" />
+        <action
+            android:id="@+id/action_signInFragment_to_loggingInFragment"
+            app:destination="@id/loggingInFragment"
+            app:enterAnim="@anim/animate_slide_down_exit" />
     </fragment>
     <fragment
         android:id="@+id/recover1Fragment"
@@ -30,7 +35,13 @@
         tools:layout="@layout/fragment_recover1" >
         <action
             android:id="@+id/action_recover1Fragment_to_recover2Fragment"
-            app:destination="@id/recover2Fragment" />
+            app:destination="@id/recover2Fragment"
+            app:enterAnim="@android:anim/fade_in" />
+        <action
+            android:id="@+id/action_recover1Fragment_to_contentMainFragment"
+            app:destination="@id/contentMainFragment"
+            app:enterAnim="@anim/fade_out"
+            app:exitAnim="@anim/fade_in" />
     </fragment>
     <fragment
         android:id="@+id/recover2Fragment"
@@ -42,22 +53,35 @@
             app:destination="@id/recover3Fragment"
             app:enterAnim="@anim/animate_split_enter"
             app:exitAnim="@anim/animate_fade_exit" />
+        <action
+            android:id="@+id/action_recover2Fragment_to_recover1Fragment"
+            app:destination="@id/recover1Fragment"
+            app:enterAnim="@anim/animate_fade_exit" />
+        <action
+            android:id="@+id/action_recover2Fragment_to_recover3Fragment2"
+            app:destination="@id/recover3Fragment"
+            app:enterAnim="@android:anim/fade_in" />
     </fragment>
     <fragment
         android:id="@+id/actualizarPerfilFragment"
         android:name="com.example.fuelonroad.ActualizarPerfilFragment"
         android:label="fragment_actualizar_perfil"
-        tools:layout="@layout/fragment_actualizar_perfil" />
+        tools:layout="@layout/fragment_actualizar_perfil" >
+        <action
+            android:id="@+id/action_actualizarPerfilFragment_to_vehiculosFragment"
+            app:destination="@id/vehiculosFragment"
+            app:enterAnim="@anim/animate_slide_left_enter" />
+    </fragment>
     <fragment
         android:id="@+id/recover3Fragment"
         android:name="com.example.fuelonroad.Recover3Fragment"
         android:label="fragment_recover3"
         tools:layout="@layout/fragment_recover3" >
         <action
-            android:id="@+id/action_recover3Fragment_to_contentMainFragment"
-            app:destination="@id/contentMainFragment"
-            app:enterAnim="@anim/animate_card_enter"
-            app:exitAnim="@anim/animate_card_exit" />
+            android:id="@+id/action_recover3Fragment_to_loggingInFragment"
+            app:destination="@id/loggingInFragment"
+            app:enterAnim="@anim/animate_in_out_enter"
+            app:exitAnim="@anim/animate_in_out_exit" />
     </fragment>
     <fragment
         android:id="@+id/mapsFragment"
@@ -73,6 +97,9 @@
         <action
             android:id="@+id/action_mapsFragment_to_chatFragment"
             app:destination="@id/chatFragment" />
+        <action
+            android:id="@+id/action_mapsFragment_to_mapRepoFragment"
+            app:destination="@id/mapRepoFragment" />
     </fragment>
     <fragment
         android:id="@+id/addVehiculoFragment"
@@ -90,10 +117,14 @@
         tools:layout="@layout/fragment_chat" >
         <action
             android:id="@+id/action_chatFragment_to_chatTextFragment"
-            app:destination="@id/chatTextFragment" />
+            app:destination="@id/chatTextFragment"
+            app:enterAnim="@anim/animate_slide_up_enter"
+            app:exitAnim="@anim/animate_slide_up_exit" />
         <action
             android:id="@+id/action_chatFragment_to_incidenciasFragment"
-            app:destination="@id/incidenciasFragment" />
+            app:destination="@id/incidenciasFragment"
+            app:enterAnim="@anim/animate_shrink_enter"
+            app:exitAnim="@anim/animate_shrink_exit" />
         <action
             android:id="@+id/action_chatFragment_to_vehiculosFragment"
             app:destination="@id/vehiculosFragment" />
@@ -106,6 +137,12 @@
         <action
             android:id="@+id/action_chatFragment_to_mapEmergencyFragment2"
             app:destination="@id/mapEmergencyFragment2" />
+        <action
+            android:id="@+id/action_chatFragment_to_mapEmergencyFragment22"
+            app:destination="@id/mapEmergencyFragment2" />
+        <action
+            android:id="@+id/action_chatFragment_to_mapRepoFragment2"
+            app:destination="@id/mapRepoFragment" />
     </fragment>
     <fragment
         android:id="@+id/incidenciasFragment"
@@ -114,7 +151,31 @@
         tools:layout="@layout/fragment_incidencias" >
         <action
             android:id="@+id/action_incidenciasFragment_to_incidenciaChatFragment"
-            app:destination="@id/incidenciaChatFragment" />
+            app:destination="@id/incidenciaChatFragment"
+            app:enterAnim="@anim/animate_slide_up_enter" />
+        <action
+            android:id="@+id/action_incidenciasFragment_to_mapRepoFragment"
+            app:destination="@id/mapRepoFragment"
+            app:enterAnim="@anim/animate_fade_enter"
+            app:exitAnim="@anim/animate_fade_exit" />
+        <action
+            android:id="@+id/action_incidenciasFragment_to_vehiculosFragment"
+            app:destination="@id/vehiculosFragment"
+            app:enterAnim="@anim/animate_slide_down_enter"
+            app:exitAnim="@anim/animate_slide_down_exit" />
+        <action
+            android:id="@+id/action_incidenciasFragment_to_mapEmergencyFragment2"
+            app:destination="@id/mapEmergencyFragment2" />
+        <action
+            android:id="@+id/action_incidenciasFragment_to_chatFragment"
+            app:destination="@id/chatFragment"
+            app:enterAnim="@anim/animate_fade_enter"
+            app:exitAnim="@anim/animate_fade_exit" />
+        <action
+            android:id="@+id/action_incidenciasFragment_to_mapsFragment"
+            app:destination="@id/mapsFragment"
+            app:enterAnim="@anim/animate_diagonal_right_enter"
+            app:exitAnim="@anim/animate_diagonal_right_exit" />
     </fragment>
     <fragment
         android:id="@+id/vehiculosFragment"
@@ -124,8 +185,8 @@
         <action
             android:id="@+id/action_vehiculosFragment_to_addVehiculoFragment"
             app:destination="@id/addVehiculoFragment"
-            app:enterAnim="@anim/animate_spin_enter"
-            app:exitAnim="@anim/animate_spin_exit" />
+            app:enterAnim="@anim/animate_zoom_enter"
+            app:exitAnim="@anim/animate_zoom_exit" />
         <action
             android:id="@+id/action_vehiculosFragment_to_vehiculosModFragment"
             app:destination="@id/vehiculosModFragment"
@@ -133,7 +194,9 @@
             app:exitAnim="@anim/animate_swipe_left_exit" />
         <action
             android:id="@+id/action_vehiculosFragment_to_chatFragment"
-            app:destination="@id/chatFragment" />
+            app:destination="@id/chatFragment"
+            app:enterAnim="@anim/animate_fade_enter"
+            app:exitAnim="@anim/animate_fade_exit" />
         <action
             android:id="@+id/action_vehiculosFragment_to_mapRepoFragment"
             app:destination="@id/mapRepoFragment" />
@@ -142,7 +205,15 @@
             app:destination="@id/mapEmergencyFragment2" />
         <action
             android:id="@+id/action_vehiculosFragment_to_mapsFragment"
-            app:destination="@id/mapsFragment" />
+            app:destination="@id/mapsFragment"
+            app:enterAnim="@anim/animate_swipe_left_enter"
+            app:exitAnim="@anim/animate_swipe_left_exit" />
+        <action
+            android:id="@+id/action_vehiculosFragment_to_mapRepoFragment2"
+            app:destination="@id/mapRepoFragment" />
+        <action
+            android:id="@+id/action_vehiculosFragment_to_addVehiculoFragment2"
+            app:destination="@id/addVehiculoFragment" />
     </fragment>
     <fragment
         android:id="@+id/contentMainFragment"
@@ -186,15 +257,56 @@
         android:id="@+id/mapRepoFragment"
         android:name="com.example.fuelonroad.MapRepoFragment"
         android:label="fragment_map_repo"
-        tools:layout="@layout/fragment_map_repo" />
+        tools:layout="@layout/fragment_map_repo" >
+        <action
+            android:id="@+id/action_mapRepoFragment_to_mapEmergencyFragment2"
+            app:destination="@id/mapEmergencyFragment2" />
+        <action
+            android:id="@+id/action_mapRepoFragment_to_vehiculosFragment"
+            app:destination="@id/vehiculosFragment" />
+        <action
+            android:id="@+id/action_mapRepoFragment_to_chatFragment"
+            app:destination="@id/chatFragment" />
+        <action
+            android:id="@+id/action_mapRepoFragment_to_chatFragment2"
+            app:destination="@id/chatFragment" />
+    </fragment>
     <fragment
         android:id="@+id/mapEmergencyFragment2"
         android:name="com.example.fuelonroad.MapEmergencyFragment"
         android:label="fragment_map_emergency"
-        tools:layout="@layout/fragment_map_emergency" />
+        tools:layout="@layout/fragment_map_emergency" >
+        <action
+            android:id="@+id/action_mapEmergencyFragment2_to_vehiculosFragment"
+            app:destination="@id/vehiculosFragment" />
+        <action
+            android:id="@+id/action_mapEmergencyFragment2_to_mapRepoFragment"
+            app:destination="@id/mapRepoFragment" />
+        <action
+            android:id="@+id/action_mapEmergencyFragment2_to_vehiculosFragment2"
+            app:destination="@id/vehiculosFragment" />
+        <action
+            android:id="@+id/action_mapEmergencyFragment2_to_chatFragment"
+            app:destination="@id/chatFragment"
+            app:enterAnim="@anim/animate_diagonal_right_enter"
+            app:exitAnim="@anim/animate_diagonal_right_exit" />
+    </fragment>
     <fragment
         android:id="@+id/mapRouteFragment"
         android:name="com.example.fuelonroad.MapRouteFragment"
         android:label="fragment_map_route"
-        tools:layout="@layout/fragment_map_route" />
+        tools:layout="@layout/fragment_map_route" >
+        <action
+            android:id="@+id/action_mapRouteFragment_to_mapRepoFragment"
+            app:destination="@id/mapRepoFragment" />
+        <action
+            android:id="@+id/action_mapRouteFragment_to_vehiculosFragment"
+            app:destination="@id/vehiculosFragment" />
+        <action
+            android:id="@+id/action_mapRouteFragment_to_chatFragment"
+            app:destination="@id/chatFragment" />
+        <action
+            android:id="@+id/action_mapRouteFragment_to_mapEmergencyFragment2"
+            app:destination="@id/mapEmergencyFragment2" />
+    </fragment>
 </navigation>

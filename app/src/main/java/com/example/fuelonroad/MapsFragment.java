@@ -98,7 +98,7 @@ public class MapsFragment extends Fragment {
         car.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.vehiculosFragment);
+                navController.navigate(R.id.action_mapsFragment_to_vehiculosFragment);
             }
         });
 
@@ -106,21 +106,21 @@ public class MapsFragment extends Fragment {
         social.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.chatFragment);
+                navController.navigate(R.id.action_mapsFragment_to_chatFragment);
             }
         });
         repo = view.findViewById(R.id.imageGasdarkblueOne);
         repo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.mapRepoFragment);
+                navController.navigate(R.id.action_mapsFragment_to_mapRepoFragment);
             }
         });
         emer = view.findViewById(R.id.imageWarning);
         emer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.mapEmergencyFragment2);
+                navController.navigate(R.id.action_mapsFragment_to_mapEmergencyFragment2);
             }
         });
     }

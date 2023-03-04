@@ -39,9 +39,11 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     implementation 'androidx.navigation:navigation-fragment:2.5.3'
     implementation 'androidx.navigation:navigation-ui:2.5.3'
-    //FlexLayout
+
+    //FlexLayout (No se ha usado)
     implementation 'com.google.android.flexbox:flexbox:3.0.0'
-    //
+
+    //Google(No se ha usado)
     implementation 'com.google.android.gms:play-services-maps:18.1.0'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'androidx.recyclerview:recyclerview:1.2.1'
@@ -58,7 +60,8 @@ dependencies {
 
     //Transition
     implementation 'com.github.AtifSayings:Animatoo:1.0.1'
-    //Dialog Spots
+
+    //Dialog Spots(Alerts)
     implementation 'com.github.d-max:spots-dialog:1.1@aar'
 
 

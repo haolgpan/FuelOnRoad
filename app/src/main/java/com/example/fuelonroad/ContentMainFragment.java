@@ -48,19 +48,19 @@ public class ContentMainFragment extends Fragment {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.loggingInFragment);
+                navController.navigate(R.id.action_contentMainFragment_to_loggingInFragment);
             }
         });
         registro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.signInFragment);
+                navController.navigate(R.id.action_contentMainFragment_to_signInFragment);
             }
         });
         recover.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.recover1Fragment);
+                navController.navigate(R.id.action_contentMainFragment_to_recover1Fragment);
             }
         });
     }
