@@ -84,12 +84,6 @@ public class VehiculosFragment extends Fragment{
         MainActivity activity = (MainActivity) getActivity();
         activity.unlockDrawer();
         navController = Navigation.findNavController(view);
-//        v1 = view.findViewById(R.id.car1);
-//        v2 = view.findViewById(R.id.txtMatri);
-//        v3 = view.findViewById(R.id.txtMattric);
-//        v4 = view.findViewById(R.id.txtMatrcula);
-//        v5 = view.findViewById(R.id.txtMatrculaa);
-//        v6 = view.findViewById(R.id.txtMatrculaB);
         map = view.findViewById(R.id.imageMap);
 
         map.setOnClickListener(new View.OnClickListener() {
@@ -134,42 +128,7 @@ public class VehiculosFragment extends Fragment{
                 navController.navigate(R.id.action_vehiculosFragment_to_addVehiculoFragment);
             }
         });
-//        v1.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                navController.navigate(R.id.action_vehiculosFragment_to_vehiculosModFragment);
-//            }
-//        });
-//        v2.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                navController.navigate(R.id.action_vehiculosFragment_to_vehiculosModFragment);
-//            }
-//        });
-//        v3.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                navController.navigate(R.id.action_vehiculosFragment_to_vehiculosModFragment);
-//            }
-//        });
-//        v4.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                navController.navigate(R.id.action_vehiculosFragment_to_vehiculosModFragment);
-//            }
-//        });
-//        v5.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                navController.navigate(R.id.action_vehiculosFragment_to_vehiculosModFragment);
-//            }
-//        });
-//        v6.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                navController.navigate(R.id.action_vehiculosFragment_to_vehiculosModFragment);
-//            }
-//        });
+
         help = view.findViewById(R.id.imageTransparentico);
         help.setOnClickListener(new View.OnClickListener() {
             @Override
