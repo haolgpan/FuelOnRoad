@@ -115,7 +115,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
-
+<!--Codigo de diseño CRUD sin RecyclerView-->
 <!--                <LinearLayout-->
 <!--                    android:id="@+id/linearColumnrectanglefortythree"-->
 <!--                    android:layout_width="match_parent"-->
