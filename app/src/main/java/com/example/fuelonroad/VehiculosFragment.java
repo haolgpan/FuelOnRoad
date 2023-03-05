@@ -33,12 +33,6 @@ public class VehiculosFragment extends Fragment{
     private ImageView emer;
     private ImageView plus;
     private TextView add;
-    private ImageView v1;
-    private ImageView v2;
-    private ImageView v3;
-    private ImageView v4;
-    private ImageView v5;
-    private ImageView v6;
     private ImageView help;
     private RecyclerView mRecyclerView;
     private NavController navController;
