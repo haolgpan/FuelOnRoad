@@ -309,4 +309,9 @@
             android:id="@+id/action_mapRouteFragment_to_mapEmergencyFragment2"
             app:destination="@id/mapEmergencyFragment2" />
     </fragment>
+    <fragment
+        android:id="@+id/testPurposeFragment"
+        android:name="com.example.fuelonroad.TestPurposeFragment"
+        android:label="fragment_test_purpose"
+        tools:layout="@layout/fragment_test_purpose" />
 </navigation>

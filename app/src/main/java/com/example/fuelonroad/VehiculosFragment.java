@@ -10,6 +10,10 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
+import androidx.navigation.fragment.NavHostFragment;
+import androidx.recyclerview.widget.ItemTouchHelper;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,8 +21,11 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+import java.util.List;
 
-public class VehiculosFragment extends Fragment {
+
+public class VehiculosFragment extends Fragment{
 
     private ImageView map;
     private ImageView repo;
@@ -26,14 +33,14 @@ public class VehiculosFragment extends Fragment {
     private ImageView emer;
     private ImageView plus;
     private TextView add;
-    private TextView v1;
-    private TextView v2;
-    private TextView v3;
-    private TextView v4;
-    private TextView v5;
-    private TextView v6;
+    private ImageView v1;
+    private ImageView v2;
+    private ImageView v3;
+    private ImageView v4;
+    private ImageView v5;
+    private ImageView v6;
     private ImageView help;
-
+    private RecyclerView mRecyclerView;
     private NavController navController;
 
     public VehiculosFragment() {
@@ -49,7 +56,27 @@ public class VehiculosFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_vehiculos, container, false);
+        View view = inflater.inflate(R.layout.fragment_vehiculos, container, false);
+
+        // Create RecyclerView
+        mRecyclerView = view.findViewById(R.id.recycler_view);
+        mRecyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+
+        // Create ImageAdapter and set to RecyclerView
+        List<Integer> images = new ArrayList<>();
+        images.add(R.drawable.car1);
+        images.add(R.drawable.car2);
+        images.add(R.drawable.car3);
+        images.add(R.drawable.car4);
+        images.add(R.drawable.car5);
+        images.add(R.drawable.car6);
+        ImageAdapter adapter = new ImageAdapter(images, NavHostFragment.findNavController(this));
+        mRecyclerView.setAdapter(adapter);
+        // Attach ItemTouchHelper to RecyclerView
+        ItemTouchHelper itemTouchHelper = new ItemTouchHelper(new SwipeToDeleteCallback(adapter));
+        itemTouchHelper.attachToRecyclerView(mRecyclerView);
+
+        return view;
     }
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
@@ -57,12 +84,12 @@ public class VehiculosFragment extends Fragment {
         MainActivity activity = (MainActivity) getActivity();
         activity.unlockDrawer();
         navController = Navigation.findNavController(view);
-        v1 = view.findViewById(R.id.txtMat);
-        v2 = view.findViewById(R.id.txtMatri);
-        v3 = view.findViewById(R.id.txtMattric);
-        v4 = view.findViewById(R.id.txtMatrcula);
-        v5 = view.findViewById(R.id.txtMatrculaa);
-        v6 = view.findViewById(R.id.txtMatrculaB);
+//        v1 = view.findViewById(R.id.car1);
+//        v2 = view.findViewById(R.id.txtMatri);
+//        v3 = view.findViewById(R.id.txtMattric);
+//        v4 = view.findViewById(R.id.txtMatrcula);
+//        v5 = view.findViewById(R.id.txtMatrculaa);
+//        v6 = view.findViewById(R.id.txtMatrculaB);
         map = view.findViewById(R.id.imageMap);
 
         map.setOnClickListener(new View.OnClickListener() {
@@ -107,42 +134,42 @@ public class VehiculosFragment extends Fragment {
                 navController.navigate(R.id.action_vehiculosFragment_to_addVehiculoFragment);
             }
         });
-        v1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                navController.navigate(R.id.action_vehiculosFragment_to_vehiculosModFragment);
-            }
-        });
-        v2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                navController.navigate(R.id.action_vehiculosFragment_to_vehiculosModFragment);
-            }
-        });
-        v3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                navController.navigate(R.id.action_vehiculosFragment_to_vehiculosModFragment);
-            }
-        });
-        v4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                navController.navigate(R.id.action_vehiculosFragment_to_vehiculosModFragment);
-            }
-        });
-        v5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                navController.navigate(R.id.action_vehiculosFragment_to_vehiculosModFragment);
-            }
-        });
-        v6.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                navController.navigate(R.id.action_vehiculosFragment_to_vehiculosModFragment);
-            }
-        });
+//        v1.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                navController.navigate(R.id.action_vehiculosFragment_to_vehiculosModFragment);
+//            }
+//        });
+//        v2.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                navController.navigate(R.id.action_vehiculosFragment_to_vehiculosModFragment);
+//            }
+//        });
+//        v3.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                navController.navigate(R.id.action_vehiculosFragment_to_vehiculosModFragment);
+//            }
+//        });
+//        v4.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                navController.navigate(R.id.action_vehiculosFragment_to_vehiculosModFragment);
+//            }
+//        });
+//        v5.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                navController.navigate(R.id.action_vehiculosFragment_to_vehiculosModFragment);
+//            }
+//        });
+//        v6.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                navController.navigate(R.id.action_vehiculosFragment_to_vehiculosModFragment);
+//            }
+//        });
         help = view.findViewById(R.id.imageTransparentico);
         help.setOnClickListener(new View.OnClickListener() {
             @Override

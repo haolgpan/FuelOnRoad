@@ -9,9 +9,22 @@
     <org.osmdroid.views.MapView
         android:id="@+id/mapView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="30dp">
+
 
     </org.osmdroid.views.MapView>
+
+    <SearchView
+        android:id="@+id/search_view"
+        android:layout_width="309dp"
+        android:layout_height="37dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+        app:layout_constraintEnd_toEndOf="@+id/imageView8"
+        app:layout_constraintStart_toStartOf="@+id/imageView8" />
 
     <ImageView
         android:id="@+id/imageView8"

@@ -58,6 +58,7 @@ public class MapsFragment extends Fragment {
         mapView = rootView.findViewById(R.id.mapView);
         mapView.setTileSource(TileSourceFactory.MAPNIK);
 
+
         mapController = (MapController) mapView.getController();
         mapController.setZoom(17);
         mapController.setCenter(new GeoPoint(41.3851, 2.1734)); // Barcelona coordinates
